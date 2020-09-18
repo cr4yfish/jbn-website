@@ -1,0 +1,11 @@
+:root {
+    --background: #444053;
+}
+
+html {
+    background: var(--background);
+}
+
+.par {
+    color: #fff;
+}
