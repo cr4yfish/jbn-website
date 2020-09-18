@@ -1,11 +1,22 @@
 :root {
-    --background: #444053;
+    --darkpurple: #444053;
+    --niceblue: #6C63FF;
+    --notwhite: #E6E6E6;
+    --lightblue: #F0EFFF;
+    --whitestwhite: #F0EFFF;
+    --maybepink: #ffffff;
+    --colorfulgray: #67647E;
+    --kindofred: #CC818C;
+    --darkerred: #A0616A; 
 }
 
-html {
+body {
     background: var(--background);
 }
 
-.par {
-    color: #fff;
+.h1 {
+    color: var(--kindofred);
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
