@@ -131,6 +131,8 @@ body {
 
 .discordicon {
     background-image: url("images/Discord-Logo-Color.png");
-    position: absolute;
+    position: relative;
+    transform: translate(50px, -50px) ;
     z-index: 10;
+    background-repeat: no-repeat;
 }
