@@ -15,7 +15,7 @@
     height: 100px;
     width: cover;
     background-color: var(--whitestwhite);
-    overflow: hidden;
+    overflow: visible;
 }
 .navbar a {
     font-family: rockwell-nova,sans-serif;
@@ -30,7 +30,9 @@
     color: var(--darkpurple);
 }
 .navbar a:hover {
+    transition: color 0.5s ease;
     color: var(--niceblue);
+    
 }
 .navbar a.active {
     color: var(--niceblue);
@@ -43,31 +45,70 @@ body {
     position: relative;
     left: 10%;
     margin-top: 100px;
-    color: var(--niceblue);
+    color: var(--lightblue);
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
     font-size: 70px;
     font-style: normal;
 }
-#container {
-    width: 100%;
-    height: 100%;
+.subtitel {
     position: relative;
+    left: 10%;
+    margin-top: -15px;
+    color: var(--lightblue);
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
 }
 .makepicdarker {
-    top:0;
-    left:0;
-    height: 1398px;
-    width: cover;
-    position: absolute;
-    background-color: var(--kindofred);
-    z-index: 10;
-}
-.titelheader {
-    position: float-left;
     background-image: url("images/Bremen\ pic.jpg");
-    aspect-ratio: auto;
+    opacity: 0.5;
+    position: float-left;
+    overflow: hidden;
     position: absolute;
     height: 1398px;
     width: 2261px;
+}
+
+.rect {
+    width: 1327px;
+    height: 17px;
+    background-color: var(--niceblue);
+    position: relative;
+    border-radius: 17px;
+    top: 210px;
+    left: 110px;
+
+}
+
+.titelheader {
+    position: float-left;
+    overflow: hidden;
+    position: absolute;
+    height: 1398px;
+    width: 2261px;
+}
+
+.titelheaderContact {
+    position: absolute;
+    left: 0px;
+    height: 707px;
+    width: 2012px;
+    background-repeat: no-repeat;
+    background-image: url("artwork/contact_artwork.png");
+    background-size: 75%;
+}
+.titelheaderjoin {
+    position: float-left;
+    aspect-ratio: auto;
+    position: absolute;
+}
+
+.whitebackdrop {
+    fill: var(--whitestwhite);
+}
+
+.shapetest {
+    margin-top: 500px;
 }
