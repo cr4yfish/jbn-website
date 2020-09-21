@@ -4,8 +4,8 @@
     --niceblue: #6C63FF;
     --notwhite: #E6E6E6;
     --lightblue: #F0EFFF;
-    --whitestwhite: #F0EFFF;
-    --maybepink: #ffffff;
+    --whitestwhite: #ffffff;
+    --maybepink: #F0EFFF;
     --colorfulgray: #67647E;
     --kindofred: #CC818C;
     --darkerred: #A0616A; 
@@ -30,8 +30,9 @@
     color: var(--darkpurple);
 }
 .navbar a:hover {
-    transition: color 0.5s ease;
+    transition: color text-shadow 0.5s ease;
     color: var(--niceblue);
+    text-shadow: 0px 0px 20px #6b63ff7a;
     
 }
 .navbar a.active {
@@ -97,7 +98,8 @@ body {
     width: 2012px;
     background-repeat: no-repeat;
     background-image: url("artwork/contact_artwork.png");
-    background-size: 75%;
+    background-size: 90%;
+    z-index: -1;
 }
 .titelheaderjoin {
     position: float-left;
@@ -105,10 +107,30 @@ body {
     position: absolute;
 }
 
-.whitebackdrop {
-    fill: var(--whitestwhite);
+.whitrect {
+    width: cover;
+    height: 3000px;
+    background-color: var(--whitestwhite);
+    margin-top: -5px;
+    overflow: hidden;
+    position: relative;
 }
 
 .shapetest {
     margin-top: 500px;
+}
+
+.contactlinks {
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 100;
+    font-size: 40px;
+    font-style: normal;
+    margin-left: 300px;
+    padding: 0px;
+}
+
+.discordicon {
+    background-image: url("images/Discord-Logo-Color.png");
+    position: absolute;
+    z-index: 10;
 }
