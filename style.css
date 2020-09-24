@@ -73,6 +73,27 @@ body {
     width: 2261px;
 }
 
+.discord_join_btn {
+    mask: url(/icons/BTNBG.svg);
+    z-index: 1;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: black;
+    mask-size: cover;
+}
+
+.btn-click-text {
+    position: absolute;
+    text-align: center;
+    left: 85px;
+    top: 10px;
+    color: var(--niceblue);
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
 .rect {
     width: 1327px;
     height: 17px;
