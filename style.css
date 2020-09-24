@@ -9,8 +9,10 @@
     --colorfulgray: #67647E;
     --kindofred: #CC818C;
     --darkerred: #A0616A; 
+    scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
+    
 .navbar {
     height: 100px;
     width: cover;
@@ -64,8 +66,7 @@ body {
 }
 .makepicdarker {
     background-image: url("images/Bremen\ pic.jpg");
-    opacity: 0.5;
-    position: float-left;
+    opacity: 0.2;
     overflow: hidden;
     position: absolute;
     height: 1398px;
