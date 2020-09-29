@@ -74,17 +74,17 @@ body {
 }
 
 .discord_join_btn {
-    mask: url(/icons/BTNBG.svg);
+    position: absolute;
     z-index: 1;
     display: inline-block;
     width: 70px;
     height: 70px;
-    background: black;
-    mask-size: cover;
+    top: 500px;
 }
 
 .btn-click-text {
     position: absolute;
+    max-width: fit-content;
     text-align: center;
     left: 85px;
     top: 10px;
@@ -149,12 +149,4 @@ body {
     font-style: normal;
     margin-left: 300px;
     padding: 0px;
-}
-
-.discordicon {
-    background-image: url("images/Discord-Logo-Color.png");
-    position: relative;
-    transform: translate(50px, -50px);
-    z-index: 10;
-    background-repeat: no-repeat;
 }
