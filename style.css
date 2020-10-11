@@ -12,6 +12,15 @@
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
     background-color: var(--darkpurple);
 }
@@ -127,14 +136,14 @@ body {
 
 .index_wave {
     position: absolute;
-    top: 1150px;
+    top: 1000px;
     left: 0px;
     width: 100%;
     overflow: visible;
 }
 .index_rectangle {
     left: 0px;
-    top: 1150px;
+    top: 1400px;
     height: 3000px;
     background-color: var(--whitestwhite);
     margin-top: -5px;
@@ -164,6 +173,72 @@ body {
 .discord_join_btn:hover {
     background: var(--niceblue);
     color: var(--lightblue);
+}
+/* scroll arrow */
+.scroll_arrow_home_1 {
+    position: absolute;
+    top: 900px;
+    left: 932px;
+}
+
+#page2 {
+    padding: 100px;
+}
+
+.home_page2 {
+    position: absolute;
+    top: 1247px;
+}
+.home_page2_icon {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("artwork/teamwork_icon.png");
+    left: 959px;
+    top: 1450px;
+    height: 1000px;
+}
+.Topic_header {
+    font-family: rockwell-nova,sans-serif;
+    font-style: regular;
+    font-weight: 400;
+    position: relative;
+    font-size: 99px;
+    color: var(--niceblue);
+}
+.Topic_text {
+    position: relative;
+    font-family: rockwell-nova,sans-serif;
+    font-style: regular;
+    font-weight: 300;
+    color: var(--darkerred);
+    font-size: 36px;
+    top: -70px;
+    width: 700px;
+    background-color: var(--notwhite);
+    padding: 40px;
+    border-radius: 30px;
+}
+/* scroll arrow 2 */
+.scroll_arrow_home_2 {
+    position: absolute;
+    top: 2156px;
+    left: 931px;
+}
+
+#page3 {
+    padding: 100px;
+}
+.home_page3 {
+    position: absolute;
+    top: 2397px;
+}
+.home_page3_icon {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("artwork/join_icon.png");
+    left: 959px;
+    top: 1597px;
+    height: 1000px;
 }
 
 
