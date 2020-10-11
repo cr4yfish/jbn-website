@@ -12,12 +12,22 @@
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
-    
+body {
+    background-color: var(--darkpurple);
+}
+/* -- navbar -- */
+
+
 .navbar {
     height: 100px;
-    width: cover;
+    top: 0px;
+    left: 0px;
+    width: 100%;
     background-color: var(--whitestwhite);
     overflow: visible;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 3px 6px #0000002c;
 }
 .navbar a {
     font-family: rockwell-nova,sans-serif;
@@ -40,60 +50,38 @@
 .navbar a.active {
     color: var(--niceblue);
 }
-body {
-    background-color: var(--darkpurple);
-}
 
-.Titel {
-    position: relative;
-    left: 10%;
-    margin-top: 100px;
-    color: var(--lightblue);
-    font-family: rockwell-nova,sans-serif;
-    font-weight: 400;
-    font-size: 70px;
-    font-style: normal;
-}
-.subtitel {
-    position: relative;
-    left: 10%;
-    margin-top: -15px;
-    color: var(--lightblue);
-    font-family: rockwell-nova,sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    font-style: normal;
-}
-.makepicdarker {
-    background-image: url("images/Bremen\ pic.jpg");
-    opacity: 0.2;
+/* --------------------------------------------------------------- */
+
+/* ----------------------------- */
+/* ---------  Index ------------ */
+/* ----------------------------- */
+
+/* -- Titleheader container für title und subtitle -- */
+/* Titleheader für Index */
+.titelheader {
+    position: float-left;
     overflow: hidden;
     position: absolute;
     height: 1398px;
     width: 2261px;
+    top: 100px;
 }
 
-.discord_join_btn {
-    position: absolute;
-    z-index: 1;
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    top: 500px;
-}
+/* Index- Jugendbeirat Neustadt titel */
 
-.btn-click-text {
-    position: absolute;
-    max-width: fit-content;
-    text-align: center;
-    left: 85px;
-    top: 10px;
-    color: var(--niceblue);
+.Titel {
+    position: relative;
+    left: 6%;
+    margin-top: 60px;
+    color: var(--lightblue);
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 90px;
     font-style: normal;
 }
+
+/* blaues rechteck zwischen title und subtitle */
 .rect {
     width: 1327px;
     height: 17px;
@@ -104,14 +92,105 @@ body {
     left: 110px;
 
 }
+/* junge menschen machen politik */
+.subtitel {
+    position: relative;
+    left: 6%;
+    margin-top: -10px;
+    color: var(--lightblue);
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
 
-.titelheader {
-    position: float-left;
+/* Neustadt bg pic  */
+.picture {
     overflow: hidden;
     position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0px;
+}
+.neustadtpic {
+    background-image: url("images/Bremen\ pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
     height: 1398px;
     width: 2261px;
+    left: 0px;
 }
+
+/* wave */
+
+.index_wave {
+    position: absolute;
+    top: 1150px;
+    left: 0px;
+    width: 100%;
+    overflow: visible;
+}
+.index_rectangle {
+    left: 0px;
+    top: 1150px;
+    height: 3000px;
+    background-color: var(--whitestwhite);
+    margin-top: -5px;
+    overflow: visible;
+    width: 100%;
+    position: absolute;
+}
+/* discord btn */
+
+.discord_join_btn {
+    z-index: 10;
+    position: absolute;
+    left: 110px;
+    top: 500px;
+    color: var(--niceblue);
+    background: var(--whitestwhite);
+    font-family: rockwell-nova,sans-serif;
+    font-style: regular;
+    font-size: 36px;
+    padding: 15px 60px;
+    border-radius: 76px;  
+    border: none;
+    transition: all 0.25s;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.335);
+    cursor: pointer;
+}
+.discord_join_btn:hover {
+    background: var(--niceblue);
+    color: var(--lightblue);
+}
+
+
+/* --------------------------------------------------------------- */
+
+
+/* ----------------------------- */
+/* -------  Mitmachen  --------- */
+/* ----------------------------- */
+
+/* -- Titleheader container für title und subtitle -- */
+/* Titleheader für Mitmachen */
+.titelheaderjoin {
+    position: float-left;
+    aspect-ratio: auto;
+    position: absolute;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* ----------------------------- */
+/* --------  Kontakt ----------- */
+/* ----------------------------- */
+
+/* -- Titleheader container für title und subtitle -- */
+/* Titleheader für Kontakt */
 
 .titelheaderContact {
     position: absolute;
@@ -123,13 +202,13 @@ body {
     background-size: 90%;
     z-index: -1;
 }
-.titelheaderjoin {
-    position: float-left;
-    aspect-ratio: auto;
-    position: absolute;
-}
 
+.whitebackdrop {
+    top: 500px;
+    position: relative;
+}
 .whitrect {
+    top: 500px;
     width: cover;
     height: 3000px;
     background-color: var(--whitestwhite);
@@ -138,15 +217,17 @@ body {
     position: relative;
 }
 
-.shapetest {
-    margin-top: 500px;
-}
-
 .contactlinks {
     font-family: rockwell-nova,sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 40px;
     font-style: normal;
     margin-left: 300px;
     padding: 0px;
+}
+
+.discordicon {
+    position: absolute;
+    left: 210px;
+    top: 40px;
 }
