@@ -222,7 +222,7 @@ body {
 .index_rectangle {
     left: 0px;
     top: 1400px;
-    height: 3000px;
+    height: 4000px;
     background-color: var(--whitestwhite);
     margin-top: -5px;
     overflow: hidden;
@@ -311,7 +311,7 @@ body {
 }
 
 #page3 {
-    padding: 100px;
+    padding-left: 100px;
 }
 .home_page3 {
     position: absolute;
@@ -322,13 +322,44 @@ body {
     background-repeat: no-repeat;
     background-image: url("artwork/join_icon.png");
     left: 959px;
-    top: 1597px;
+    top: 1497px;
     height: 600px;
     width: 49%;
 }
 
-.footer_box {
+
+/* scroll arrow 3 */
+.scroll_arrow_home_3 {
     position: absolute;
+    top: 3250px;
+    left: 931px;
+}
+
+/* page 4 */
+
+#page4 {
+    padding-left: 100px;
+    padding-top: -50px;
+}
+
+.home_page4 {
+    position: absolute;
+    top: 3550px;
+}
+
+.home_page4_icon {
+    position: relative;
+    background-repeat: no-repeat;
+    background-image: url("artwork/actual_join_icon.png");
+    left: 959px;
+    top: 2050px;
+    height: 600px;
+    width: 49%;
+}
+
+
+.footer_box {
+    position: relative;
     width: 100%;
     left: 0px;
     bottom: -3400px;
@@ -387,7 +418,6 @@ body {
     overflow: hidden;
     position: absolute;
 }
-
 .contactlinks {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
@@ -396,7 +426,6 @@ body {
     margin-left: 300px;
     padding: 0px;
 }
-
 .discordicon {
     position: absolute;
     left: 210px;
