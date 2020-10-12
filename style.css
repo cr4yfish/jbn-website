@@ -9,8 +9,33 @@
     --colorfulgray: #67647E;
     --kindofred: #CC818C;
     --darkerred: #A0616A; 
+    --nicePink: #FDC2CC;
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
+
+/* scrollbar */
+
+html {
+    --scrollbarBG: #ffffff;
+    --thumbBG: #6C63FF;
+  }
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
+
+/* smooth scrolling effect */
 
 html {
     scroll-behavior: smooth;
@@ -21,6 +46,7 @@ html {
 	}
 }
 
+/* Background color */
 body {
     background-color: var(--darkpurple);
 }
@@ -28,16 +54,22 @@ body {
 
 
 .navbar {
-    height: 100px;
+    height: 0px;
     top: 0px;
     left: 0px;
     width: 100%;
     background-color: var(--whitestwhite);
-    overflow: visible;
+    overflow: hidden;
     position: fixed;
     z-index: 100;
     box-shadow: 0 3px 6px #0000002c;
+    transition: height 0.8s ease;
 }
+
+.expand .navbar {
+    height: 100px;
+}
+
 .navbar a {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
@@ -60,6 +92,49 @@ body {
     color: var(--niceblue);
 }
 
+/* menu icon */
+
+.menu_icon {
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    left: 90%;
+    margin-right: 50px;
+    z-index: 1000;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 45px;
+    height: 7px;
+    border-radius: 13px;
+    background-color: var(--nicePink);
+    margin: 8px 0;
+    transition: 0.4s;
+    box-shadow: 0px 3px 6px #00000018;
+}
+
+
+/* rotation */
+
+.change .bar1 {
+    -webkit-transform: rotate(45deg) translate(-9px, 10px);
+    transform: rotate(-45deg) translate(-9px, 10px);
+}
+
+/* fade out sec bar */
+
+.change .bar2 {
+    opacity: 0;
+}
+
+/* rotate 3rd bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -12px);
+    transform: rotate(45deg) translate(-10px, -12px);
+}
+
+
+
 /* --------------------------------------------------------------- */
 
 /* ----------------------------- */
@@ -72,8 +147,9 @@ body {
     position: float-left;
     overflow: hidden;
     position: absolute;
-    height: 1398px;
-    width: 2261px;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
     top: 100px;
 }
 
@@ -98,7 +174,7 @@ body {
     position: relative;
     border-radius: 17px;
     top: 210px;
-    left: 110px;
+    left: 0px;
 
 }
 /* junge menschen machen politik */
@@ -120,7 +196,9 @@ body {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    left: 0px;
+    left: 0;
+    top: 0;
+    max-width: 100%;
 }
 .neustadtpic {
     background-image: url("images/Bremen\ pic.jpg");
@@ -128,7 +206,6 @@ body {
     background-size: cover;
     opacity: 0.2;
     height: 1398px;
-    width: 2261px;
     left: 0px;
 }
 
@@ -139,7 +216,8 @@ body {
     top: 1000px;
     left: 0px;
     width: 100%;
-    overflow: visible;
+    overflow: hidden;
+    
 }
 .index_rectangle {
     left: 0px;
@@ -147,9 +225,10 @@ body {
     height: 3000px;
     background-color: var(--whitestwhite);
     margin-top: -5px;
-    overflow: visible;
+    overflow: hidden;
     width: 100%;
     position: absolute;
+    
 }
 /* discord btn */
 
@@ -183,12 +262,15 @@ body {
 
 #page2 {
     padding: 100px;
+    
 }
 
 .home_page2 {
     position: absolute;
     top: 1247px;
+    
 }
+
 .home_page2_icon {
     position: relative;
     background-repeat: no-repeat;
@@ -196,6 +278,9 @@ body {
     left: 959px;
     top: 1450px;
     height: 1000px;
+    width: 49%;
+    
+    
 }
 .Topic_header {
     font-family: rockwell-nova,sans-serif;
@@ -221,7 +306,7 @@ body {
 /* scroll arrow 2 */
 .scroll_arrow_home_2 {
     position: absolute;
-    top: 2156px;
+    top: 2170px;
     left: 931px;
 }
 
@@ -238,9 +323,16 @@ body {
     background-image: url("artwork/join_icon.png");
     left: 959px;
     top: 1597px;
-    height: 1000px;
+    height: 600px;
+    width: 49%;
 }
 
+.footer_box {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -3400px;
+}
 
 /* --------------------------------------------------------------- */
 
@@ -253,8 +345,8 @@ body {
 /* Titleheader für Mitmachen */
 .titelheaderjoin {
     position: float-left;
-    aspect-ratio: auto;
     position: absolute;
+    top: 10%;
 }
 
 /* --------------------------------------------------------------- */
@@ -271,20 +363,24 @@ body {
     position: absolute;
     left: 0px;
     height: 707px;
-    width: 2012px;
+    width: 100%;
+    overflow: hidden;
     background-repeat: no-repeat;
     background-image: url("artwork/contact_artwork.png");
     background-size: 90%;
     z-index: -1;
 }
-
 .whitebackdrop {
     top: 500px;
     position: relative;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
 }
 .whitrect {
     top: 500px;
-    width: cover;
+    width: 100%;
+    left: 0px;
     height: 3000px;
     background-color: var(--whitestwhite);
     margin-top: -5px;
