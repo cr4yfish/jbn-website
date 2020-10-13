@@ -1,8 +1,9 @@
-var isShown = false; 
-
 function buttonTransitionFunction(x) {
     x.classList.toggle("change");
 }
+
+
+var isShown = false; 
 
 function toggleNavBar() {
     if (isShown == false) {

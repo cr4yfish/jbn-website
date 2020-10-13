@@ -100,17 +100,27 @@ body {
     top: 30px;
     left: 90%;
     margin-right: 50px;
-    z-index: 1000;
+    z-index: 1000;  
 }
 
+
 .bar1, .bar2, .bar3 {
-    width: 45px;
+    width: 43px;
     height: 7px;
     border-radius: 13px;
     background-color: var(--nicePink);
     margin: 8px 0;
-    transition: 0.4s;
+    transition: all 0.4s;
     box-shadow: 0px 3px 6px #00000018;
+}
+.bar2 {
+    width: 40px;
+}
+.bar3 {
+    width: 37px;
+}
+.menu_icon:hover > * {
+    width: 45px;
 }
 
 
@@ -119,20 +129,25 @@ body {
 .change .bar1 {
     -webkit-transform: rotate(45deg) translate(-9px, 10px);
     transform: rotate(-45deg) translate(-9px, 10px);
+    width: 45px;
+    background-color: var(--darkerred);
 }
 
 /* fade out sec bar */
 
 .change .bar2 {
     opacity: 0;
+    width: 45px;
 }
 
 /* rotate 3rd bar */
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -12px);
     transform: rotate(45deg) translate(-10px, -12px);
+    width: 45px;
+    background-color: var(--darkerred);
 }
-
+/* cross hover anim */
 
 
 /* --------------------------------------------------------------- */
@@ -221,8 +236,8 @@ body {
 }
 .index_rectangle {
     left: 0px;
-    top: 1400px;
-    height: 4000px;
+    top: 1300px;
+    height: 3300px;
     background-color: var(--whitestwhite);
     margin-top: -5px;
     overflow: hidden;
@@ -249,10 +264,12 @@ body {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.335);
     cursor: pointer;
 }
+
 .discord_join_btn:hover {
     background: var(--niceblue);
     color: var(--lightblue);
 }
+
 /* scroll arrow */
 .scroll_arrow_home_1 {
     position: absolute;
@@ -262,13 +279,11 @@ body {
 
 #page2 {
     padding: 100px;
-    
 }
 
 .home_page2 {
     position: absolute;
     top: 1247px;
-    
 }
 
 .home_page2_icon {
@@ -279,8 +294,6 @@ body {
     top: 1450px;
     height: 1000px;
     width: 49%;
-    
-    
 }
 .Topic_header {
     font-family: rockwell-nova,sans-serif;
@@ -303,6 +316,7 @@ body {
     padding: 40px;
     border-radius: 30px;
 }
+
 /* scroll arrow 2 */
 .scroll_arrow_home_2 {
     position: absolute;
@@ -357,12 +371,35 @@ body {
     width: 49%;
 }
 
+/* footer */
+
+
+.footer_links {
+    color: var(--lightblue);
+    text-decoration: none;
+    position: relative;
+    z-index: 100;
+    top: 2300px;
+    float: right;
+    left: -100px;
+    font-family: rockwell-nova,sans-serif;
+    font-style: light;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.5s;
+    padding: 0 10px;
+}
+
+.footer_links:hover {
+    color: var(--nicePink);
+    text-shadow: 0px 0px 20px var(--nicePink);
+}
 
 .footer_box {
-    position: relative;
+    position: absolute;
     width: 100%;
     left: 0px;
-    bottom: -3400px;
+    bottom: -3630px;
 }
 
 /* --------------------------------------------------------------- */
@@ -430,4 +467,29 @@ body {
     position: absolute;
     left: 210px;
     top: 40px;
+}
+
+/* --------------------------------------------------------------- */
+
+
+/* ----------------------------- */
+/* -------  Impressum  --------- */
+/* ----------------------------- */
+
+.Impressum_Titel{
+    left: 200px;
+}
+
+.back_arrow {
+    position: absolute;
+    float: left;
+    top: 90px;
+    left: 25px;
+    z-index: 50;
+}
+
+.Impressum_text {
+    position: absolute;
+    left: 200px;
+    top: 400px;
 }
