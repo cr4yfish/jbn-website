@@ -10,13 +10,13 @@
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
+    
     <header>
-        <div id="navbar" class="navbar">
-            <a class="active" href="#home">Home</a>
-            <a href="mitmachen.html">Mitmachen</a>
-            <a href="kontakt.html">Kontakt</a>
-            
-        </div>
+            <div id="navbar" class="navbar">
+                <a class="active" href="#home">Home</a>
+                <a href="mitmachen.html">Mitmachen</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
 
         <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
             <div class="bar1"></div>
@@ -26,18 +26,19 @@
     </header>
     <body>
 
-        <button class="discord_join_btn" onclick="window.location.href='https://www.discord.gg/UVQdK45';">
-            Discord beitreten
-        </button>
 
-    <div id="container">
-        <div class="picture"><div id="neustadtpic" class="neustadtpic"></div></div>
+
+        <div class="picture">
+            <div id="neustadtpic" class="neustadtpic"></div>
+        </div>
         <div id="titelheader" class="titelheader">
             <div id="rect" class="rect"></div>
             <h1 class="Titel">Jugendbeirat Neustadt</h1>
             <h2 class="subtitel">Wir machen Politik - und du kannst das auch!</h2>
+            <button class="discord_join_btn" onclick="window.location.href='https://www.discord.gg/UVQdK45';">
+                Discord beitreten
+            </button>
         </div>
-    </div>
 
     <div id="scroll_arrow_home_1" class="scroll_arrow_home_1"> 
         <a href="#page2">
@@ -45,13 +46,12 @@
         </a>
     </div>
 
-    <div id="index_wave" >
-        <svg class="index_wave" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320">
-            <path fill="#ffffff" fill-opacity="1" d="M0,256L120,245.3C240,235,480,213,720,197.3C960,181,1200,171,1320,165.3L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" style="--darkreader-inline-fill:#2d3031;" data-darkreader-inline-fill=""></path>
+
+    <div id="index_rectangle" class="index_rectangle">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="3392.787" viewbox="0 0 1920 3392.787">
+            <path id="white" d="M5900,1179.24s-680.326,21.791-948.911,39.528S3980,1275.932,3980,1275.932v3296.1H5900Z" transform="translate(-3980 -1179.24)" fill="#fff"/>
           </svg>
     </div>
-
-    <div id="index_rectangle" class="index_rectangle"></div>
 
 
     <div id="page2_icon" class="home_page2_icon"></div>
@@ -89,20 +89,20 @@
         <p class="Topic_text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum</p>
     </div>
 
-    </body>
+</body>
 
-    <footer>
-        <div id="footer_box" class="footer_box">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320"><path fill="#444053" fill-opacity="1" d="M0,288L80,272C160,256,320,224,480,213.3C640,203,800,213,960,208C1120,203,1280,181,1360,170.7L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-           
-        </div>
+    <footer class="footer">
+
         <div class="footer_text">
             <a class="footer_links" href="home.html">Home</a>
-
             <a class="footer_links" href="datenschutz.html">Datenschutz</a>
-
             <a class="footer_links" href="impressum.html">Impressum</a>
+        </div>
 
+        <div class="footer_box_container">
+            <div id="footer_box" class="footer_box"><svg xmlns="http://www.w3.org/2000/svg" width="cover" height="288" viewbox="0 0 1920 288"><path id="footerbox" d="M5900,4289.762s-340.72,25.033-680.316,54.777c-320.347,28.058-461.922,51.848-771.843,56.524S3980,4363.243,3980,4363.243l-.016,214.456L5900,4578.08Z" transform="translate(-3979.984 -4289.762)" fill="#444053"/></svg>
+            </div>
         </div>
     </footer>
+
 </html>
