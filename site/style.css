@@ -46,9 +46,6 @@ html {
 	}
 }
 
-body {
-    background-color: red;
-}
 
 /* -- navbar -- */
 
@@ -156,7 +153,6 @@ body {
 /* -- Titleheader container für title und subtitle -- */
 /* Titleheader für Index */
 .titelheader {
-    overflow: visible;
     position: absolute;
     width: 90%;
     height: 65%;
@@ -187,8 +183,7 @@ body {
 
 /* blaues rechteck zwischen title und subtitle */
 .rect {
-    position: absolute;
-    margin-top: 12%;
+    position: relative;
     width: 70%;
     height: 17px;
     border-radius: 17px;
@@ -237,7 +232,7 @@ body {
 }
 
 /* -------------------------------- */
-
+/* white space */
 .index_rectangle {
     left: 0px;
     top: 100%;
@@ -246,8 +241,6 @@ body {
     position: absolute;
     
 }
-
-
 
 /* allgemein */
 .Topic_header {
@@ -272,29 +265,32 @@ body {
     border-radius: 30px;
 }
 
+/* scroll arrows */
+
+.arrow {
+    position: absolute;
+    left: 932px;
+}
 /* scroll arrow -> Page 2*/
 .scroll_arrow_home_1 {
-    position: absolute;
     top: 900px;
-    left: 932px;
 }
 /* scroll arrow -> Page 3 */
 .scroll_arrow_home_2 {
-    position: absolute;
     top: 2170px;
-    left: 931px;
 }
 /* scroll arrow -> Page 4 */
 .scroll_arrow_home_3 {
     top: 3250px;
-    position: absolute;
-
 }
 
 /* icon */
 
 .icon {
     position: relative;
+    overflow: visible;
+    z-index: 90;
+    background-color: green;
     background-repeat: no-repeat;
     height: 1000px;
     width: 50%;
@@ -309,28 +305,20 @@ body {
     background-image: url("artwork/actual_join_icon.png");
 }
 
-.home_page2 {
-    overflow: auto;
+#pages_section {
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    top: 100%;
+}
+
+.page {
+    overflow: visible;
+    position: relative;
     padding: 100px;
-    position: absolute;
-    top: 1247px;
-    
 }
 
-.home_page3 {
-    padding-left: 100px;
-    overflow: auto;
-    position: absolute;
-    top: 2397px;
-}
 
-.home_page4 {
-    padding-left: 100px;
-    padding-top: -50px;
-    overflow: auto;
-    position: absolute;
-    top: 3550px;
-}
 
 /* footer */
 
