@@ -268,8 +268,8 @@ html {
 /* scroll arrows */
 
 .arrow {
-    position: absolute;
-    left: 932px;
+    position: relative;
+    left: 50%;
 }
 /* scroll arrow -> Page 2*/
 .scroll_arrow_home_1 {
@@ -293,7 +293,6 @@ html {
     z-index: 90;
     background-repeat: no-repeat;
     height: 1000px;
-    width: 50%;
 }
 .home_page2_icon {
     background-image: url("artwork/teamwork_icon.png");
@@ -307,6 +306,7 @@ html {
 
 #pages_section {
     position: absolute;
+    background-color: red;
     width: 100%;
     box-sizing: border-box;
     top: 100%;
