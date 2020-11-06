@@ -35,6 +35,9 @@ html {
     border: 3px solid var(--scrollbarBG);
   }
 
+
+
+
 /* smooth scrolling effect */
 
 html {
@@ -154,7 +157,7 @@ html {
 /* Titleheader für Index */
 .titelheader {
     position: absolute;
-    width: 90%;
+    width: fit-content;
     height: 65%;
     left: 6%;
     top: 100px;
@@ -162,6 +165,7 @@ html {
 
 .Titel {
     position: relative;
+    max-width: 100%;
     margin-left: 2%;
     margin-top: 60px;
     color: var(--lightblue);
@@ -221,7 +225,6 @@ html {
     background-size: contain;
     left: 0;
     top: 0;
-    max-width: 100%;
 }
 .neustadtpic {
     background-image: url("images/Bremen\ pic.jpg");
@@ -269,55 +272,46 @@ html {
 
 .arrow {
     position: relative;
+    z-index: 90;
     left: 50%;
+    top: 100px;
 }
+
 /* scroll arrow -> Page 2*/
 .scroll_arrow_home_1 {
-    top: 900px;
+    top: 85vh;
 }
-/* scroll arrow -> Page 3 */
-.scroll_arrow_home_2 {
-    top: 720px;
-}
-/* scroll arrow -> Page 4 */
-.scroll_arrow_home_3 {
-    top: 1650px;
-}
+
 
 /* icon */
 
 .icon {
     position: absolute;
-    overflow: visible;
-    left: 1000px;
-    z-index: 90;
-    background-repeat: no-repeat;
-    height: 1000px;
+    left: 100%;
+    float: right;
+    width: 100%;
 }
-.home_page2_icon {
-    background-image: url("artwork/teamwork_icon.png");
+
+.page2_icon {
+    width: auto;
+    height: auto;
 }
-.home_page3_icon {
-    background-image: url("artwork/join_icon.png");
-}
-.home_page4_icon {
-    background-image: url("artwork/actual_join_icon.png");
-}
+
 
 #pages_section {
     position: absolute;
-    background-color: red;
-    width: 100%;
+    min-width: fit-content;
+    left: 0;
     box-sizing: border-box;
     top: 100%;
 }
 
 .page {
     overflow: visible;
+    width: min-content;
     position: relative;
     padding: 100px;
 }
-
 
 /* footer */
 
@@ -328,6 +322,10 @@ html {
     padding: 0 10px;
     margin-right: 20px;
     float: right;
+}
+
+/* text properties */
+.links {
     color: var(--lightblue);
     text-decoration: none;
     font-family: rockwell-nova,sans-serif;
@@ -336,21 +334,18 @@ html {
     font-size: 20px;
     transition: 0.5s;
 }
-.footer_links:hover {
+.links:hover {
     color: var(--nicePink);
     text-shadow: 0px 0px 20px var(--nicePink);
 }
 
-.footer_box {
+footer {
     position: relative;
-    left: 0;
     bottom: -220rem;
     margin-top: 5px;
-    width: 100%;
 }
+
 .footer_box_svg {
-    position: relative;
-    left: 0;
     transform: scale(1,1.1);
     -moz-transform: scale(1,1.1);
     -webkit--transform: scale(1,1.1);
