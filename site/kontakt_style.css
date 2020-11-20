@@ -51,14 +51,22 @@ body {
     top: 900px;
     width: 100%;
     left: 0px;
-    height: 500px;
+    height: 1500px;
     background-color: var(--whitestwhite);
     margin-top: -5px;
     overflow: hidden;
     position: absolute;
 }
+
+.scroll_arrow_kontakt_1 {
+    position: relative;
+    z-index: 90;
+    left: 50%;
+}
+
 .contact_info {
     position: relative;
+    left: 20%;
     width: fit-content;
     overflow: hidden;
     padding: 1%;
