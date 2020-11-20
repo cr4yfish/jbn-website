@@ -17,3 +17,14 @@
 body {
     background-color: var(--darkpurple);
 }
+
+.font_rockwell_nova {
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
+h1 {
+    color: var(--lightblue);
+}

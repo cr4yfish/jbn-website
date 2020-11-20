@@ -1,0 +1,100 @@
+:root {
+    --darkpurple: #444053;
+    --darkpurpletrans: #444053a8;
+    --niceblue: #6C63FF;
+    --nicebluetrans: #6b63ff4b;
+    --notwhite: #E6E6E6;
+    --lightblue: #F0EFFF;
+    --whitestwhite: #ffffff;
+    --maybepink: #F0EFFF;
+    --colorfulgray: #67647E;
+    --kindofred: #CC818C;
+    --darkerred: #A0616A; 
+    --nicePink: #FDC2CC;
+    scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
+}
+
+
+body {
+    background-color: var(--darkpurple);
+}
+
+.font_rockwell_nova {
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
+/* -- Titleheader container für title und subtitle -- */
+/* Titleheader für Kontakt */
+
+.titelheaderContact {
+    position: absolute;
+    left: 0px;
+    height: 707px;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-image: url("artwork/contact_artwork.png");
+    background-size: 100%;
+    z-index: -1;
+}
+.whitebackdrop {
+    top: 500px;
+    position: absolute;
+    left: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+.whitrect {
+    top: 900px;
+    width: 100%;
+    left: 0px;
+    height: 500px;
+    background-color: var(--whitestwhite);
+    margin-top: -5px;
+    overflow: hidden;
+    position: absolute;
+}
+.contact_info {
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    padding: 1%;
+}
+.contactlinks {
+    font-size: 40px;
+    margin-left: 300px;
+    padding: 0px;
+    color: var(--darkpurple);
+    transition: all 0.25s;
+}
+.contactlinks:hover {
+    color: var(--niceblue);
+    text-shadow: 0 0 10px var(--nicebluetrans);
+    transition: all 0.25s;
+}
+
+.fa-instagram {
+    left: 205px;
+}
+.fa-discord {
+    top: 58px;
+}
+.fa-envelope {
+    transform: translateX(-2px);
+    font-size: 2.8rem !important;
+}
+
+.mouse_pointer {
+    cursor: pointer;
+}
+
+.kontakt_icon {
+    color: var(--niceblue);
+    font-size: 3rem;
+    position: absolute;
+    left: 205px;
+}
+

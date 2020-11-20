@@ -50,6 +50,15 @@ html {
 }
 
 
+/* fonts */
+
+.font_rockwell_nova {
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+}
+
 /* -- navbar -- */
 
 
@@ -195,7 +204,7 @@ html {
 }
 
 /* discord btn */
-.discord_join_btn {
+.btn {
     position: relative;
     margin-top: 6%;
     border: none;
@@ -211,7 +220,7 @@ html {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.335);
 }
 
-.discord_join_btn:hover {
+.btn:hover{
     background: var(--niceblue);
     color: var(--lightblue);
 }
@@ -313,44 +322,7 @@ html {
     padding: 100px;
 }
 
-/* footer */
 
-.footer_links {
-    position: relative;
-    top: 100px;
-    z-index: 10;
-    padding: 0 10px;
-    margin-right: 20px;
-    float: right;
-}
-
-/* text properties */
-.links {
-    color: var(--lightblue);
-    text-decoration: none;
-    font-family: rockwell-nova,sans-serif;
-    font-style: light;
-    font-weight: 400;
-    font-size: 20px;
-    transition: 0.5s;
-}
-.links:hover {
-    color: var(--nicePink);
-    text-shadow: 0px 0px 20px var(--nicePink);
-}
-
-footer {
-    position: relative;
-    bottom: -220rem;
-    margin-top: 5px;
-}
-
-.footer_box_svg {
-    transform: scale(1,1.1);
-    -moz-transform: scale(1,1.1);
-    -webkit--transform: scale(1,1.1);
-    -ms-transform: scale(1,1.1);
-}
 /* --------------------------------------------------------------- */
 
 
@@ -369,54 +341,7 @@ footer {
 /* --------------------------------------------------------------- */
 
 
-/* ----------------------------- */
-/* --------  Kontakt ----------- */
-/* ----------------------------- */
 
-/* -- Titleheader container für title und subtitle -- */
-/* Titleheader für Kontakt */
-
-.titelheaderContact {
-    position: absolute;
-    left: 0px;
-    height: 707px;
-    width: 100%;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-image: url("artwork/contact_artwork.png");
-    background-size: 100%;
-    z-index: -1;
-}
-.whitebackdrop {
-    top: 500px;
-    position: absolute;
-    left: 0px;
-    overflow: hidden;
-    width: 100%;
-}
-.whitrect {
-    top: 900px;
-    width: 100%;
-    left: 0px;
-    height: 3000px;
-    background-color: var(--whitestwhite);
-    margin-top: -5px;
-    overflow: hidden;
-    position: absolute;
-}
-.contactlinks {
-    font-family: rockwell-nova,sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    font-style: normal;
-    margin-left: 300px;
-    padding: 0px;
-}
-.discordicon {
-    position: absolute;
-    left: 210px;
-    top: 40px;
-}
 
 /* --------------------------------------------------------------- */
 

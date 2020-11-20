@@ -1,0 +1,38 @@
+/* footer */
+
+.footer_links {
+    position: relative;
+    top: 100px;
+    z-index: 10;
+    padding: 0 10px;
+    margin-right: 20px;
+    float: right;
+}
+
+/* text properties */
+.links {
+    color: var(--lightblue);
+    text-decoration: none;
+    font-family: rockwell-nova,sans-serif;
+    font-style: light;
+    font-weight: 400;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.links:hover {
+    color: var(--nicePink);
+    text-shadow: 0px 0px 20px var(--nicePink);
+}
+
+footer {
+    position: relative;
+    bottom: -170rem;
+    margin-top: 5px;
+}
+
+.footer_box_svg {
+    transform: scale(1,1.1);
+    -moz-transform: scale(1,1.1);
+    -webkit--transform: scale(1,1.1);
+    -ms-transform: scale(1,1.1);
+}

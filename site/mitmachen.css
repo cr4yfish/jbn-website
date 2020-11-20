@@ -1,0 +1,24 @@
+:root {
+    --darkpurple: #444053;
+    --darkpurpletrans: #444053a8;
+    --niceblue: #6C63FF;
+    --nicebluetrans: #6b63ff4b;
+    --notwhite: #E6E6E6;
+    --lightblue: #F0EFFF;
+    --whitestwhite: #ffffff;
+    --maybepink: #F0EFFF;
+    --colorfulgray: #67647E;
+    --kindofred: #CC818C;
+    --darkerred: #A0616A; 
+    --nicePink: #FDC2CC;
+    scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
+}
+
+
+body {
+    background-color: var(--darkpurple);
+}
+
+p {
+    color: var(--notwhite);
+}
