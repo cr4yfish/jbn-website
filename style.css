@@ -166,15 +166,12 @@ html {
 .titelheader {
     position: absolute;
     max-width: 80vw;
+    max-height: 50vw;
     left: 7%;
     align-content: center;
     align-self: center;
-    height: autot;
     top: 100px;
 }
-
-
-
 
 .Titel {
     position: relative;
@@ -230,7 +227,7 @@ html {
     color: var(--lightblue);
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1200px) {
     .titelheader {
         left: 10vw;
         align-content: center;
