@@ -7,7 +7,7 @@ var isShown = false;
 
 function toggleNavBar() {
     if (isShown == false) {
-        document.getElementById("navbar").style.height = "100px";
+        document.getElementById("navbar").style.height = "5vw";
         isShown = true;
     } else if (isShown == true) {
         document.getElementById("navbar").style.height = "0%";
