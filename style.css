@@ -159,7 +159,23 @@ html {
 /* ----------------------------- */
 /* ---------  Index ------------ */
 /* ----------------------------- */
-
+/* Neustadt bg pic  */
+.picture {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 0;
+    top: 0;
+}
+.neustadtpic {
+    background-image: url("images/Bremen\ pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    left: 0px;
+}
 
 /* -- Titleheader container für title und subtitle -- */
 /* Titleheader für Index */
@@ -227,41 +243,6 @@ html {
     color: var(--lightblue);
 }
 
-@media screen and (max-width: 1200px) {
-    .titelheader {
-        left: 10vw;
-        align-content: center;
-        align-self: center;
-    }
-    .Titel {
-        font-size: 10vw;
-    }
-    .subtitel {
-        font-size: 4vw;
-    }
-    .btn {
-        font-size: 4vw;
-    }
-}
-
-/* Neustadt bg pic  */
-.picture {
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    left: 0;
-    top: 0;
-}
-.neustadtpic {
-    background-image: url("images/Bremen\ pic.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 110vh;
-    left: 0px;
-}
-
 /* -------------------------------- */
 /* white space */
 .index_rectangle {
@@ -273,12 +254,68 @@ html {
     position: absolute;
 }
 
+#pages_section {
+    position: absolute;
+    min-width: fit-content;
+    left: 0;
+    box-sizing: border-box;
+    top: 100%;
+}
+
+.page {
+    overflow: visible;
+    width: min-content;
+    position: relative;
+    padding: 5vw;
+}
+@media screen and (max-width: 1200px) {
+    .titelheader {
+        left: 5vw;
+        top: 15%;
+        max-width: 90vw;
+        align-content: center;
+    }
+    .Titel {
+        font-size: 7vw;
+        left: 5%;
+        width: fit-content;
+        align-self: center;
+    }
+    .rect {
+        align-self: center;
+        width: 90%;
+        left: 5%;
+    }
+    .subtitel {
+        font-size: 4vw;
+        left: 0%;
+        margin-left: 0%;
+        text-align: center;
+    }
+    .btn {
+        font-size: 4vw;
+        top: 15vw;
+        left: 23%;
+    }
+    .index_rectangle {
+        top: 50%;
+    }
+    #page2 {
+        top: -25vw;
+    }
+    #pages_section {
+        top: 65%;
+    }
+}
+
+
 /* allgemein */
 .Topic_header {
     font-family: rockwell-nova,sans-serif;
     font-style: regular;
     font-weight: 400;
     position: relative;
+    width: fit-content;
     font-size: 5vw;
     color: var(--niceblue);
 }
@@ -294,6 +331,24 @@ html {
     background-color: var(--notwhite);
     padding: 3vw;
     border-radius: 3vw;
+}
+
+@media screen and (max-width: 1800px) {
+    .Topic_header {
+        font-size: 10vw;
+        text-align: center;
+        align-content: center;
+        align-self: center;
+    }
+    .Topic_text {
+        font-size: 5vw;
+        width: fit-content;
+    }
+    .page {
+        width: fit-content;
+        align-content: center;
+        align-self: center;
+    }
 }
 
 /* scroll arrows */
@@ -336,20 +391,6 @@ html {
     }
 }
 
-#pages_section {
-    position: absolute;
-    min-width: fit-content;
-    left: 0;
-    box-sizing: border-box;
-    top: 100%;
-}
-
-.page {
-    overflow: visible;
-    width: min-content;
-    position: relative;
-    padding: 5vw;
-}
 
 
 /* --------------------------------------------------------------- */
