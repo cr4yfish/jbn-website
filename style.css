@@ -95,8 +95,12 @@ html {
     color: var(--niceblue);
     text-shadow: 0 0 20px var(--lightblue);
 }
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 600px) {
+    .navbar a {
+        font-size: 7vw;
+        left: 3vw;
+        top: 1vh;
+    }
 }
 /* menu icon */
 
@@ -185,9 +189,9 @@ html {
     max-width: 80vw;
     max-height: 50vw;
     left: 7%;
+    top: 8vh;
     align-content: center;
     align-self: center;
-    top: 100px;
 }
 
 .Titel {
@@ -228,7 +232,7 @@ html {
     margin-top: 6%;
     border: none;
     cursor: pointer;
-    padding: 15px 60px;
+    padding: 1vw 4vw;
     border-radius: 76px;  
     transition: all 0.25s;
     font-family: rockwell-nova,sans-serif;
@@ -237,6 +241,13 @@ html {
     color: var(--niceblue);
     background: var(--whitestwhite);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.335);
+}
+
+@media screen and (max-height: 600px) {
+    .btn {
+        visibility: hidden;
+    }
+
 }
 
 .btn:hover{
@@ -267,12 +278,15 @@ html {
     overflow: visible;
     width: min-content;
     position: relative;
-    padding: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
     .titelheader {
         left: 5vw;
-        top: 15%;
+        top: 5vh;
         max-width: 90vw;
         align-content: center;
     }
@@ -295,20 +309,28 @@ html {
     }
     .btn {
         font-size: 4vw;
-        top: 15vw;
+        top: 3%;
+        align-self: center;
         left: 23%;
+        padding: 3vw 6vw;
     }
     .index_rectangle {
         top: 50%;
     }
     #page2 {
-        top: -25vw;
+        top: -13vh;
     }
     #pages_section {
         top: 65%;
     }
     .neustadtpic {
         height: 65vh;
+    }
+    .page {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        padding-top: 1vw;
+        padding-bottom: 3vw;
     }
 }
 
@@ -337,21 +359,24 @@ html {
     border-radius: 3vw;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1200px) {
     .Topic_header {
-        font-size: 7vw;
+        font-size: 10vw;
         text-align: center;
         align-content: center;
         align-self: center;
     }
     .Topic_text {
-        font-size: 3vw;
+        font-size: 7vw;
         width: fit-content;
     }
     .page {
         width: fit-content;
         align-content: center;
         align-self: center;
+    }
+    .page_about {
+        background-color: var(--lightblue) !important;
     }
 }
 
@@ -371,6 +396,8 @@ html {
 @media screen and (max-width: 1000px) {
     .scroll_arrow_home_1 {
         visibility: visible;
+        top: 85vh;
+        left: 44%;
     }
     .scroll_arrow_home_2  {
         display: none;
@@ -379,7 +406,16 @@ html {
         display: none;
     }
 }
-
+@media screen and (max-height: 850px) {
+    .scroll_arrow_home_1 {
+        visibility: hidden;
+    }
+}
+@media screen and (min-width: 400px) {
+    .scroll_arrow_home_1 {
+        visibility: hidden;
+    }
+}
 /* icon */
 
 .icon {
@@ -387,7 +423,6 @@ html {
     left: 100%;
     float: right;
 }
-
 
 .page2_icon {
     width: auto;
@@ -399,8 +434,6 @@ html {
         display: none;
     }
 }
-
-
 
 /* --------------------------------------------------------------- */
 
