@@ -95,7 +95,9 @@ html {
     color: var(--niceblue);
     text-shadow: 0 0 20px var(--lightblue);
 }
+@media screen and (max-width: 1200px) {
 
+}
 /* menu icon */
 
 
@@ -174,7 +176,6 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
-    left: 0px;
 }
 
 /* -- Titleheader container für title und subtitle -- */
@@ -268,7 +269,7 @@ html {
     position: relative;
     padding: 5vw;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     .titelheader {
         left: 5vw;
         top: 15%;
@@ -306,6 +307,9 @@ html {
     #pages_section {
         top: 65%;
     }
+    .neustadtpic {
+        height: 65vh;
+    }
 }
 
 
@@ -335,13 +339,13 @@ html {
 
 @media screen and (max-width: 1800px) {
     .Topic_header {
-        font-size: 10vw;
+        font-size: 7vw;
         text-align: center;
         align-content: center;
         align-self: center;
     }
     .Topic_text {
-        font-size: 5vw;
+        font-size: 3vw;
         width: fit-content;
     }
     .page {
@@ -356,19 +360,24 @@ html {
 .arrow {
     position: relative;
     z-index: 90;
-    left: 37%;
-    top: 100px;
+    left: 40%;
 }
-@media screen and (max-width: 1800px) {
-    .arrow  {
-        display: none;
-    }
 
-}
 /* scroll arrow -> Page 2*/
 .scroll_arrow_home_1 {
-    top: 85vh;
-    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    .scroll_arrow_home_1 {
+        visibility: visible;
+    }
+    .scroll_arrow_home_2  {
+        display: none;
+    }
+    .scroll_arrow_home_3  {
+        display: none;
+    }
 }
 
 /* icon */
