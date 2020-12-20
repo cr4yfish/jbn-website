@@ -69,9 +69,9 @@
     position: absolute;
 }
 
-#content {
+.content {
     position: relative;
-    top: 30vh;
+    top: 60vh;
     width: 80vw;
     left: 10vw;
 }
@@ -144,5 +144,8 @@ p {
     }
     .mobile_header {
         visibility: visible;
+    }
+    .content {
+        top: 27vh;
     }
 }
