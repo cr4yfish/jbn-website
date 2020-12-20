@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Allgemein -->
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>JBN</title>
-        <meta name="Jugendbeirat Neustadt" content="">
+        
+
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.typekit.net/ofj3rzd.css">
-        <link rel="stylesheet" href="kontakt_style.css">
         <link rel="stylesheet" href="style.css">
-        <link href="contact-form.css" rel="stylesheet">
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/d4164139c2.js" crossorigin="anonymous"></script>
+
+        <!-- Size-Spezifisch -->
+        <link rel="stylesheet" href="kontakt_style.css">
+        <link href="contact-form.css" rel="stylesheet">
+        <meta name="Kontakt" content="">
+        <title>Kontakt</title>
     </head>
+
     <header>
         <div id="navbar" class="navbar">
             <a href="index.html">Home</a>
@@ -31,71 +38,58 @@
 
 
         <div id="titelheaderContact" class="titelheaderContact"></div>
+        <span class="mobile_header font_rockwell_nova">Kontakt</span>
 
-        <div id="whitebackdrop" class="whitebackdrop">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,224L80,208C160,192,320,160,480,160C640,160,800,192,960,176C1120,160,1280,96,1360,64L1440,32L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-        </div>
+        <!-- Weiße Fläche -->
+        <div id="index_rectangle" class="contact_rectangle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 3392.787"><path id="white" d="M5900,1179.24s-680.326,21.791-948.911,39.528S3980,1275.932,3980,1275.932v3296.1H5900Z" transform="translate(-3980 -1179.24)" fill="#fff"/></svg></div>
 
-        <div id="whitrect" class="whitrect">
-
-
-            <span id="scroll_arrow_kontakt_1" class="scroll_arrow_kontakt_1"> 
-                <a href="#contact-form-main">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="56.416" height="34.884" viewbox="0 0 56.416 34.884"> <path id="chevron-down2" d="M15.629,12.87,37.208,34.449,58.787,12.87l6.629,6.676L37.208,47.754,9,19.546Z" transform="translate(-9 -12.87)" fill="#6c63ff"/> </svg>
-                </a>
-            </span>
+        <section id="content">
 
             <div class="contact-form-body">
-            
                 <div id="contact-form-main">
-            <label class="Form-title font_rockwell_nova">Deine Idee einreichen</label>
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                    
-                    <div class="fcf-form-group">
-                        <div class="fcf-input-group">
-                            <input type="text" placeholder="Name" id="Name" name="Name" class="fcf-form-control font_rockwell_nova" required>
+                    <label class="Form-title font_rockwell_nova">Deine Idee einreichen</label>
+                    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+    
+                        <div class="fcf-form-group">
+                            <div class="fcf-input-group">
+                                <input type="text" placeholder="Name" id="Name" name="Name" class="fcf-form-control font_rockwell_nova" required>
+                            </div>
                         </div>
-                    </div>
-            
-            
-                    <div class="fcf-form-group">
-                        <div class="fcf-input-group">
-                            <textarea id="Message" placeholder="Nachricht" name="Message" class="fcf-form-control font_rockwell_nova" rows="6" maxlength="1000" required></textarea>
+                
+                        <div class="fcf-form-group ">
+                            <div class="fcf-input-group">
+                                <textarea id="Message" placeholder="Nachricht" name="Message" class="fcf-form-control font_rockwell_nova" rows="6" maxlength="1000" required></textarea>
+                            </div>
                         </div>
-                    </div>
-            
-                    <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block font_rockwell_nova">Abschicken</button>
-                    </div>
-            
-                </form>
+                
+                        <div class="fcf-form-group">
+                            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block font_rockwell_nova">Abschicken</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
+                <div class="contact_info">
+
+                    <span class="mouse_pointer each_link" onclick="window.location.href='https://www.discord.gg/UVQdK45';">
+                        <p class="fab fa-discord kontakt_icon"></p>
+                        <p class="contactlinks font_rockwell_nova">discord.gg/UVQdK45</p>
+                    </span>
+                    <br><br><br>
+                    <span class="mouse_pointer each_link" onclick="window.location.href='https://www.instagram.com/jugendbeirat_neustadt/';">
+                        <p class="fab fa-instagram-square kontakt_icon"></p>
+                        <p class="contactlinks font_rockwell_nova">Jugendbeirat_Neustadt</p>
+                    </span>
+                    <br><br><br>
+                    <span class="mouse_pointer each_link" onclick="window.location.href='mailto:jugendinitiative.bremen@gmx.de';">
+                        <p class="fas fa-envelope kontakt_icon"></p>
+                        <p class="contactlinks font_rockwell_nova">jugendinitiative.bremen@gmx.de</p>
+                    </span>
                 </div>
 
-            <div class="contact_info">
 
-                <span class="mouse_pointer" onclick="window.location.href='https://www.discord.gg/UVQdK45';">
-                    <i class="fab fa-discord kontakt_icon"></i>
-                    <p class="contactlinks font_rockwell_nova">discord.gg/UVQdK45</p>
-                </span>
+        </section>
 
-                <span class="mouse_pointer" onclick="window.location.href='https://www.google.com';">
-                    <i class="fab fa-instagram-square kontakt_icon"></i>
-                    <p class="contactlinks font_rockwell_nova">Jugendbeirat_Neustadt</p>
-                </span>
-
-                <span class="mouse_pointer" onclick="window.location.href='mailto:jugendinitiative.bremen@gmx.de';">
-                    <i class="fas fa-envelope kontakt_icon"></i>
-                    <p class="contactlinks font_rockwell_nova">jugendinitiative.bremen@gmx.de</p>
-                </span>
-
-            </div>
-
-
-            
-            </div>
-
-        </div>
     </body>
 
 

@@ -55,7 +55,6 @@ html {
 .font_rockwell_nova {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
-    font-size: 40vw;
     font-style: normal;
 }
 
@@ -108,7 +107,7 @@ html {
 .menu_icon {
     cursor: pointer;
     position: fixed;
-    top: 30px;
+    top: 3vh;
     right: 5vw;
     z-index: 1000;  
 }

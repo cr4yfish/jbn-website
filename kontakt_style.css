@@ -14,15 +14,19 @@
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
-
-body {
-    background-color: var(--darkpurple);
+.center-center {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content:center;
 }
+
+
 
 .font_rockwell_nova {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 4vw;
     font-style: normal;
 }
 
@@ -32,51 +36,71 @@ body {
 .titelheaderContact {
     position: absolute;
     left: 0px;
+    top: -10px;
     height: 707px;
     width: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
     background-image: url("artwork/contact_artwork.png");
-    background-size: 100%;
+    background-size: contain;
+    background-color: var(--darkpurple);
     z-index: -1;
 }
-.whitebackdrop {
-    top: 500px;
+
+/* mobile version of header, blends in */
+.mobile_header {
     position: absolute;
-    left: 0px;
-    overflow: hidden;
-    width: 100%;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--whitestwhite);
+    font-size: 15vw;
+    visibility: hidden;
 }
-.whitrect {
-    top: 900px;
-    width: 100%;
+
+/* white space */
+
+.contact_rectangle {
     left: 0px;
-    height: 1500px;
-    background-color: var(--whitestwhite);
-    margin-top: -5px;
+    top: 50%;
     overflow: hidden;
+    width: 100%;
+    height: 100vh;
     position: absolute;
 }
 
-.scroll_arrow_kontakt_1 {
+#content {
     position: relative;
-    z-index: 90;
-    left: 50%;
+    top: 30vh;
+    width: 80vw;
+    left: 10vw;
+}
+
+
+p {
+    margin: 0;
+    padding: 0;
+    float: left;
 }
 
 .contact_info {
     position: relative;
-    left: 20%;
     width: fit-content;
-    overflow: hidden;
-    padding: 1%;
+    height: fit-content;
+    margin-top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 .contactlinks {
-    font-size: 40px;
-    margin-left: 300px;
-    padding: 0px;
+    padding-left: 1vw;
+    font-size: 2vw;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
     color: var(--darkpurple);
     transition: all 0.25s;
+    margin: 0;
 }
 .contactlinks:hover {
     color: var(--niceblue);
@@ -84,15 +108,11 @@ body {
     transition: all 0.25s;
 }
 
-.fa-instagram {
-    left: 205px;
-}
-.fa-discord {
-    top: 58px;
-}
+
+
 .fa-envelope {
-    transform: translateX(-2px);
-    font-size: 2.8rem !important;
+    font-size: 2.5rem !important;
+    padding: 0;
 }
 
 .mouse_pointer {
@@ -102,7 +122,27 @@ body {
 .kontakt_icon {
     color: var(--niceblue);
     font-size: 3rem;
-    position: absolute;
-    left: 205px;
+    position: relative;
 }
 
+@media screen and (max-width: 1000px) {
+    .contactlinks {
+        visibility: hidden;
+    }
+    .contact_info {
+        left: 50%;
+    }
+    .kontakt_icon {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .contact_rectangle {
+        top: 30%;
+    }
+    .titelheaderContact {
+        background-image: var(--darkpurple);
+    }
+    .mobile_header {
+        visibility: visible;
+    }
+}
