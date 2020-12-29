@@ -111,14 +111,15 @@ p {
 .links_arrange {
     position: relative;
     float: left;
-    top: 0vh;
 }
+
+
 .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
-    font-size: 4vw !important;
+    font-size: 3vw !important;
     padding: 0;
 }
 .fa-envelope {
-    font-size: 3.5vw !important;
+    font-size: 2.5vw !important;
 }
 .fa-poll {
     top: -0.5vh;
@@ -136,8 +137,27 @@ p {
 .qr_code {
     position: relative;
     right: 0;
+    top: -1vw;
+    right: -1vw;
 }
-
+@media screen and (min-width: 1700px) {
+    .links_arrange {
+        top: 3vh;
+    }
+}
+@media screen and (min-width: 2000px) {
+    .links_arrange {
+        top: 5vh;
+    }
+}
+@media screen and (min-width: 1900px){
+    .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
+        font-size: 2.5vw !important;
+    }
+    .fa-envelope {
+        font-size: 2.2vw !important;
+    }
+}
 @media screen and (max-width: 1000px) {
     .contactlinks {
         visibility: hidden;
