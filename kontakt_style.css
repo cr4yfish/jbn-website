@@ -161,7 +161,6 @@ p {
 @media screen and (max-width: 1000px) {
     .contactlinks {
         visibility: hidden;
-        font-size: 0%;
     }
     .links_arrange {
         float: none;
