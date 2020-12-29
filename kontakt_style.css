@@ -74,8 +74,8 @@
     top: 60vh;
     width: 80vw;
     left: 10vw;
-}
 
+}
 
 p {
     margin: 0;
@@ -86,7 +86,7 @@ p {
 .contact_info {
     position: relative;
     width: fit-content;
-    height: fit-content;
+    height: min-content;
     margin-top: 5vh;
     left: 50%;
     transform: translateX(-50%);
@@ -108,13 +108,21 @@ p {
     transition: all 0.25s;
 }
 
-
-
-.fa-envelope {
-    font-size: 2.5rem !important;
+.links_arrange {
+    position: relative;
+    float: left;
+    top: 0vh;
+}
+.fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
+    font-size: 4vw !important;
     padding: 0;
 }
-
+.fa-envelope {
+    font-size: 3.5vw !important;
+}
+.fa-poll {
+    top: -0.5vh;
+}
 .mouse_pointer {
     cursor: pointer;
 }
@@ -125,12 +133,18 @@ p {
     position: relative;
 }
 
+.qr_code {
+    position: relative;
+    right: 0;
+}
+
 @media screen and (max-width: 1000px) {
     .contactlinks {
         visibility: hidden;
+        font-size: 0%;
     }
-    .contact_info {
-        left: 50%;
+    .links_arrange {
+        float: none;
     }
     .kontakt_icon {
         left: 50%;
@@ -146,6 +160,31 @@ p {
         visibility: visible;
     }
     .content {
-        top: 27vh;
+        top: 35vh;
+    }
+    .qr_code {
+        visibility: hidden;
+    }
+    .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
+        font-size: 7vw !important;
+    }
+    .fa-envelope {
+        font-size: 6.4vw !important;
+    }
+}
+@media screen and (max-width: 900px) {
+    .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
+        font-size: 8vw !important;
+    }
+    .fa-envelope {
+        font-size: 7.4vw !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
+        font-size: 15vw !important;
+    }
+    .fa-envelope {
+        font-size: 14.4vw !important;
     }
 }
