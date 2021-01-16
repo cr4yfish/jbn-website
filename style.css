@@ -63,6 +63,7 @@ html {
 
 .navbar {
     height: 0px;
+    display: inline-block;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -73,7 +74,7 @@ html {
     box-shadow: 0 3px 6px #0000002c;
     transition: 0.5s ease;
 }
-.navbar a {
+.navbar span {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -85,17 +86,17 @@ html {
     text-decoration: none;
     color: var(--darkpurple);
 }
-.navbar a:hover {
+.navbar span:hover {
     transition: color text-shadow 0.5s ease;
     color: var(--niceblue);
     text-shadow: 0px 0px 20px #6b63ff7a;
 }
-.navbar a.active {
+.navbar span.active {
     color: var(--niceblue);
     text-shadow: 0 0 20px var(--lightblue);
 }
 @media screen and (max-width: 600px) {
-    .navbar a {
+    .navbar span {
         font-size: 7vw;
         left: 3vw;
         top: 1vh;
