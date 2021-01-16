@@ -164,6 +164,18 @@ html {
 /* ----------------------------- */
 /* ---------  Index ------------ */
 /* ----------------------------- */
+
+html {
+    margin: 0px;
+    min-height: 200vh;
+ }
+ 
+ body {
+    margin: 0px;
+    min-height: 200vh;
+ }
+
+
 /* Neustadt bg pic  */
 .picture {
     overflow: hidden;
@@ -281,10 +293,13 @@ html {
 
 #pages_section {
     position: absolute;
-    min-width: fit-content;
+    width: 100%;
     left: 0;
     box-sizing: border-box;
     top: 100%;
+}
+.pages_content {
+    min-width: fit-content;
 }
 
 .page {
@@ -295,6 +310,10 @@ html {
     padding-right: 5vw;
     padding-top: 5vw;
     padding-bottom: 5vw;
+}
+
+#page4 {
+    margin-bottom: 5rem;
 }
 @media screen and (max-width: 1200px) {
     .titelheader {
@@ -355,7 +374,7 @@ html {
     font-weight: 400;
     position: relative;
     width: fit-content;
-    font-size: 5vw;
+    font-size: 3vw;
     color: var(--niceblue);
 }
 .Topic_text {
@@ -364,23 +383,23 @@ html {
     font-style: regular;
     font-weight: 300;
     color: var(--darkerred);
-    font-size: 2vw;
+    font-size: 1.5vw;
     top: -3vw;
     width: 40vw;
     background-color: var(--notwhite);
-    padding: 3vw;
-    border-radius: 3vw;
+    padding: 2vw;
+    border-radius: 1.5vw;
 }
 
 @media screen and (max-width: 1200px) {
     .Topic_header {
-        font-size: 10vw;
+        font-size: 5vw;
         text-align: center;
         align-content: center;
         align-self: center;
     }
     .Topic_text {
-        font-size: 7vw;
+        font-size: 4vw;
         width: fit-content;
     }
     .page {
