@@ -21,8 +21,6 @@
     justify-content:center;
 }
 
-
-
 .font_rockwell_nova {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
@@ -32,6 +30,17 @@
 
 /* -- Titleheader container für title und subtitle -- */
 /* Titleheader für Kontakt */
+
+.content {
+    position: relative;
+    top: 60vh;
+}
+
+.inner_content {
+
+    width: 80vw;
+    left: 10vw;
+}
 
 .titelheaderContact {
     position: absolute;
@@ -69,13 +78,7 @@
     position: absolute;
 }
 
-.content {
-    position: relative;
-    top: 60vh;
-    width: 80vw;
-    left: 10vw;
 
-}
 
 p {
     margin: 0;
@@ -90,6 +93,7 @@ p {
     margin-top: 5vh;
     left: 50%;
     transform: translateX(-50%);
+    margin-bottom: 10vh;
 }
 
 .contactlinks {
@@ -102,6 +106,7 @@ p {
     transition: all 0.25s;
     margin: 0;
 }
+
 .contactlinks:hover {
     color: var(--niceblue);
     text-shadow: 0 0 10px var(--nicebluetrans);
@@ -112,7 +117,6 @@ p {
     position: relative;
     float: left;
 }
-
 
 .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
     font-size: 3vw !important;

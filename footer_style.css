@@ -72,16 +72,17 @@ a {
     font-size: 1vw;
     font-family: rockwell-nova,sans-serif;
     font-weight: 200;
-    color: var(--kindofred);
+    color: var(--nicePink);
     display: block;
     width: 100%;
     padding-bottom: 5px;
     text-decoration: none; 
-    transition: 250ms ease all;
+    transition: 1500ms ease all;
 }
 a:hover, .footer_third .fab:hover {
-    color: var(--nicePink);
-    transition: 250ms ease color;
+    color: var(--maybepink);
+    transition: 250ms ease all;
+    text-shadow: 0 0 5px var(--nicePink);
 }
 .inner_footer .footer_third li {
     display: inline block;

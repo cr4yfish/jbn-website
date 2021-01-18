@@ -267,6 +267,10 @@ html {
     color: var(--lightblue);
 }
 
+
+.btn:focus {
+    background-color: red;
+}
 /* -------------------------------- */
 /* white space */
 .index_rectangle {
