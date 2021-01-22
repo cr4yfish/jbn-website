@@ -95,6 +95,15 @@ a:hover, .footer_third .fab:hover {
     transition: 250ms ease all;
 }
 
+
+.version_info {
+    color: #ffffff5e !important;
+    font-size: 1vw;
+    display: block;
+    padding-bottom: 5px;
+    width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
     .logo_container {
         left: 50%;

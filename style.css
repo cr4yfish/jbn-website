@@ -56,7 +56,9 @@ html {
     font-family: rockwell-nova,sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
+
 
 /* -- navbar -- */
 
@@ -188,7 +190,7 @@ html {
     top: 0;
 }
 .neustadtpic {
-    background-image: url("images/Bremen\ pic.jpg");
+    background-image: url("images/Bremen\ pic.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
