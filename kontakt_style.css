@@ -50,7 +50,7 @@
     width: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
-    background-image: url("artwork/contact_artwork.png");
+    background-image: url("artwork/contact_artwork.webp");
     background-size: contain;
     background-color: var(--darkpurple);
     z-index: -1;
