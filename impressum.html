@@ -8,34 +8,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.typekit.net/ofj3rzd.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="impressum.css">
         <link rel="stylesheet" href="footer_style.css">
         <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/d4164139c2.js" crossorigin="anonymous"></script>
     </head>
-<header>
-    <header>
-        <div id="back_arrow" class="back_arrow">
-            <a href="index.html">
-            <svg xmlns="http://www.w3.org/2000/svg" width="34.884" height="56.416" viewbox="0 0 34.884 56.416"><path id="chevron-down_rotated" d="M15.629,12.87,37.208,34.449,58.787,12.87l6.629,6.676L37.208,47.754,9,19.546Z" transform="translate(47.754 -9) rotate(90)" fill="#6c63ff"/></svg>
-        </a>
-        </div>
-    </header>
 
+
+<header>
+    <div id="navbar" class="navbar">
+        <span class="mouse_pointer" onclick="window.location.href='index.html'">Home</span>
+        <span class="active mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
+    </div>
+
+    <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 </header>
 
-
-
 <body>
-    <div  class="Impressum_Titel">
-        <h1 class="Titel">Impressum</h1>
+
+    <div id="impressum_content_wrapper">
+
+        <div class="impressum_content">
+
+            <h1 class="Titel">Impressum</h1>
+
+            <button class="btn" onclick="window.location.href='index.html';">Zurück</button>
+
+            <div class="Impressum_text"> 
+                <p class="Topic_text">Website erstellt von Manuel Fahmy   
+                        
+                </p>
+
+                <p class="Topic_text">
+                    <a href="https://github.com/cr4yfish/">GitHub
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                </p>
+                <p class="Topic_text">
+                    <a href="https://github.com/cr4yfish/jbn-website">Source Code
+                        <i class="fas fa-code"></i>
+                    </a>
+                </p>
+                
+            </div>
         </div>
+    </div>
 
-    <div class="Impressum_text"> 
-
-<p class="Topic_text">
-    Impressum ist noch in Arbeit.<br>
-</p>
-</div>
+    <footer class="footer">
+        <div class="inner_footer">
+            <div class="logo_container">
+                <img src="images/logo.webp" class="logo_footer" alt="Logo" style="width:100px;height:auto;">
+            </div>
+            <div class="footer_third">
+                <h1>Rechtliches</h1>
+                <a href="impressum.html">Impressum</a>
+                <a href="datenschutz.html">Datenschutz</a>
+            </div>
+            <div class="footer_third">
+                <h1>Sitemap</h1>
+                <a href="index.html">Home</a>
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+            <div class="footer_third">
+                <h1>Social Media</h1>
+                <li > <i class="fab fa-instagram-square mouse_pointer" onclick="window.location.href='https://www.instagram.com/jugendbeirat_neustadt/';"></i></li>
+                <li> <i class="fab fa-discord  mouse_pointer" onclick="window.location.href='https://www.discord.gg/UVQdK45';"></i></li>
+            </div>
+            <div class="footer_third">
+                <p class="version_info">Version 1.0</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
-
 </html>

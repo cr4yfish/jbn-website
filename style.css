@@ -499,25 +499,3 @@ html {
 
 /* --------------------------------------------------------------- */
 
-
-/* ----------------------------- */
-/* -------  Impressum  --------- */
-/* ----------------------------- */
-
-.Impressum_Titel{
-    left: 200px;
-}
-
-.back_arrow {
-    position: absolute;
-    float: left;
-    top: 90px;
-    left: 25px;
-    z-index: 50;
-}
-
-.Impressum_text {
-    position: absolute;
-    left: 200px;
-    top: 400px;
-}

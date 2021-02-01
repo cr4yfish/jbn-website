@@ -1,0 +1,107 @@
+:root {
+    --darkpurple: #444053;
+    --mediumpurple: #4e4a5f;
+    --lighterpurple: #5c5770;
+    --darkpurpletrans: #444053a8;
+    --niceblue: #6C63FF;
+    --notwhite: #E6E6E6;
+    --lightblue: #F0EFFF;
+    --whitestwhite: #ffffff;
+    --maybepink: #F0EFFF;
+    --colorfulgray: #67647E;
+    --kindofred: #CC818C;
+    --darkerred: #A0616A; 
+    --nicePink: #FDC2CC;
+    scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
+}
+
+body {
+    background-color: var(--darkpurple);
+    height: 100%;
+}
+
+#impressum_content_wrapper {
+    position: relative;
+    min-height: 100%;
+    margin-bottom: 20vw;
+}
+
+.back_arrow {
+    position: relative;
+    float: left;
+    top: 90px;
+    left: 25px;
+}
+
+.impressum_content {
+    width: 100%;
+    margin-top: 12vh;
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    margin-top: 30px !important;
+    margin-bottom: 80px !important;
+    padding: 1vw 5vw ;
+    font-size: 1.5vw !important;
+}
+
+.Titel {
+    margin-bottom: 10vh !important;
+    position: relative;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 !important;
+}
+
+.Topic_text {
+    position: relative;
+    background-color: var(--mediumpurple);
+    color: var(--lightblue);
+    box-shadow: 1px 2px 15px var(--mediumpurple);
+    transition: all 250ms;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+}
+
+.Topic_text a {
+    font-size: 1.5vw;
+}
+
+.Topic_text:hover {
+    box-shadow: 5px 10px 20px var(--lighterpurple);
+    transition: all 250ms;
+    background-color: var(--lighterpurple);
+    color: var(--lightblue);
+}
+
+.fab {
+    position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+    .Topic_text, .Topic_text a {
+        font-size: 1rem !important;
+    }
+    .btn {
+        padding: 2vw 7vw;
+        font-size: 1rem !important;
+        margin-bottom: 5vh !important;
+        visibility: visible !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Topic_text, .Topic_text a {
+        font-size: 1rem !important;
+    }
+    .Titel {
+        font-size: 10vw !important;
+    }
+}
