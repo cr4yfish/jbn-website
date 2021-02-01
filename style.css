@@ -254,10 +254,18 @@ html {
     font-family: rockwell-nova,sans-serif;
     font-style: regular;
     font-size: 2vw;
-    color: var(--niceblue);
     background: var(--whitestwhite);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.335);
 }
+
+.btn_primary {
+    color: var(--niceblue);
+}
+
+.btn-secondary {
+    color: var(--lighterpurple) !important;
+}
+
 
 @media screen and (max-height: 600px) {
     .btn {
