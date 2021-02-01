@@ -271,7 +271,7 @@ html {
 
 
 .btn:focus {
-    background-color: red;
+    background-color: var(--kindofred);
 }
 /* -------------------------------- */
 /* white space */

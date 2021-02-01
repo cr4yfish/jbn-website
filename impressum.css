@@ -15,6 +15,12 @@
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
+
+.cool_font {
+    font-family: rockwell-nova,sans-serif;
+    font-weight: 300;
+}
+
 body {
     background-color: var(--darkpurple);
     height: 100%;
@@ -35,7 +41,7 @@ body {
 
 .impressum_content {
     width: 100%;
-    margin-top: 12vh;
+    margin-top: 7rem;
     position: relative;
 }
 
@@ -45,8 +51,8 @@ body {
     transform: translateX(-50%) !important;
     margin-top: 30px !important;
     margin-bottom: 80px !important;
-    padding: 1vw 5vw ;
-    font-size: 1.5vw !important;
+    padding: 1rem 5rem ;
+    font-size: 1rem !important;
 }
 
 .Titel {
@@ -58,27 +64,65 @@ body {
     margin: 0 !important;
 }
 
-.Topic_text {
+.text_wrapper:first-child {
+    margin-top: 20px;
+}
+
+.text_wrapper {
     position: relative;
     background-color: var(--mediumpurple);
-    color: var(--lightblue);
-    box-shadow: 1px 2px 15px var(--mediumpurple);
-    transition: all 250ms;
     width: fit-content;
+    max-width: 60%;
+    height: auto;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 50px;
+    padding: 2vw;
+    border-radius: 1.5vw;
+    top: -3vw;
+    box-shadow: 1px 2px 15px var(--mediumpurple);
+    transition: all 250ms;
 }
 
-.Topic_text a {
-    font-size: 1.5vw;
-}
-
-.Topic_text:hover {
-    box-shadow: 5px 10px 20px var(--lighterpurple);
+.text_wrapper:hover {
     transition: all 250ms;
     background-color: var(--lighterpurple);
+    box-shadow: 1px 2px 20px var(--lighterpurple);
+}
+
+.extra_Topic_text {
     color: var(--lightblue);
+    position: relative;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0.5rem;
+}
+
+.extra_Topic_text a, .block_text a, .text_wrapper a {
+    font-size:1rem;
+    position: relative;
+    text-align: center;
+}
+
+.extra_Topic_text:hover {
+    text-shadow: 5px 10px 20px var(--lighterpurple);
+    transition: all 250ms;
+    color: var(--lightblue);
+}
+
+.block_text {
+    text-align: center;
+    color: var(--notwhite);
+    font-size: 1rem;
+}
+
+.block_text a {
+    margin-top: 10px;
+}
+
+.text_wrapper a {
+    text-align: center;
+    position: relative;
 }
 
 .fab {
@@ -86,22 +130,39 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
-    .Topic_text, .Topic_text a {
-        font-size: 1rem !important;
+    .extra_Topic_text, .extra_Topic_text a {
+        font-size: 1rem;
     }
     .btn {
-        padding: 2vw 7vw;
-        font-size: 1rem !important;
         margin-bottom: 5vh !important;
         visibility: visible !important;
     }
 }
 
 @media screen and (max-width: 700px) {
-    .Topic_text, .Topic_text a {
-        font-size: 1rem !important;
+    .email_link {
+        text-indent: -9999px;
+        line-height: 0;
+    }
+    .email_link::after {
+        content: "E-mail";
+        text-indent: 0;
+        display: block;
+        line-height: initial;
+    }
+    .btn {
+        padding: 0.6rem 2rem;
+    }
+    .extra_Topic_text, .extra_Topic_text a {
+        font-size: 0.8rem ;
+    }
+    .block_text {
+        font-size: 10rem;
     }
     .Titel {
-        font-size: 10vw !important;
+        font-size: 10vw ;
+    }
+    .impressum_content {
+        margin-top: 5rem !important;
     }
 }

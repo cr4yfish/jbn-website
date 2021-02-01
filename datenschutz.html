@@ -9,12 +9,75 @@
       <script src="https://kit.fontawesome.com/d4164139c2.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://use.typekit.net/ofj3rzd.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="datenschutz_style.css">
+        <link rel="stylesheet" href="impressum.css">
+        <link rel="stylesheet" href="footer_style.css">
+        <script src="script.js"></script>
 
     </head>
 
-    <h1 class="font_rockwell_nova">Es werden momentan keine Daten erhoben.</h1>
-    <button class="btn" onclick="window.location.href='index.html';">Zurück</button>
+<header>
+  <div id="navbar" class="navbar">
+      <span class="mouse_pointer" onclick="window.location.href='index.html'">Home</span>
+      <span class="mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
+  </div>
 
+  <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+  </div>
+</header>
+  
+  <body>
+  
+      <div id="impressum_content_wrapper">
+  
+          <div class="impressum_content">
+  
+              <h1 class="Titel">Datenschutz</h1>
+  
+              <button class="btn" onclick="window.location.href='index.html';">Zurück</button>
+            
+                <div class="Impressum_text">
 
+                  <div class="text_wrapper">
+                    <p class="extra_Topic_text cool_font">Es werden momentan keine Benutzer-spezifischen Daten erhoben.</p>
+                  </div>
+
+                  <div class="text_wrapper">
+                    <p class="extra_Topic_text cool_font">Was heißt das?</p>
+                    <p class="block_text cool_font">Aus Sicht der Website sind Sie anonym. Es werden Analysedaten zu der Anzahl der Website-Besucher erhoben, jedoch sind diese nicht auf einzelne Benutzer zurückverfolgbar.</p>
+                  </div>
+
+                </div>
+          </div>
+      </div>
+  
+      <footer class="footer">
+          <div class="inner_footer">
+              <div class="logo_container">
+                  <img src="images/logo.webp" class="logo_footer" alt="Logo" style="width:100px;height:auto;">
+              </div>
+              <div class="footer_third">
+                  <h1>Rechtliches</h1>
+                  <a href="impressum.html">Impressum</a>
+                  <a href="datenschutz.html">Datenschutz</a>
+              </div>
+              <div class="footer_third">
+                  <h1>Sitemap</h1>
+                  <a href="index.html">Home</a>
+                  <a href="kontakt.html">Kontakt</a>
+              </div>
+              <div class="footer_third">
+                  <h1>Social Media</h1>
+                  <li > <i class="fab fa-instagram-square mouse_pointer" onclick="window.location.href='https://www.instagram.com/jugendbeirat_neustadt/';"></i></li>
+                  <li> <i class="fab fa-discord  mouse_pointer" onclick="window.location.href='https://www.discord.gg/UVQdK45';"></i></li>
+              </div>
+              <div class="footer_third">
+                  <p class="version_info">Version 1.1</p>
+              </div>
+          </div>
+      </footer>
+  
+  </body>
 </html>

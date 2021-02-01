@@ -18,7 +18,7 @@
 <header>
     <div id="navbar" class="navbar">
         <span class="mouse_pointer" onclick="window.location.href='index.html'">Home</span>
-        <span class="active mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
+        <span class="mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
     </div>
 
     <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
@@ -39,21 +39,30 @@
             <button class="btn" onclick="window.location.href='index.html';">Zurück</button>
 
             <div class="Impressum_text"> 
-                <p class="Topic_text">Website erstellt von Manuel Fahmy   
-                        
-                </p>
 
-                <p class="Topic_text">
-                    <a href="https://github.com/cr4yfish/">GitHub
-                        <i class="fab fa-github-square"></i>
-                    </a>
-                </p>
-                <p class="Topic_text">
-                    <a href="https://github.com/cr4yfish/jbn-website">Source Code
-                        <i class="fas fa-code"></i>
-                    </a>
-                </p>
-                
+                <div class="text_wrapper">
+                   <p class="extra_Topic_text cool_font">Website erstellt von Manuel Fahmy</p>
+                </div>  
+
+                <div class="text_wrapper">
+                    <p class="extra_Topic_text cool_font">Kontaktmöglichkeiten</p>
+                    <a style="cursor: pointer;" class="cool_font email_link" onclick="window.location.href='mailto:jugendinitiative.bremen@gmx.de';">jugendinitiative.bremen@gmx.de</a>
+                    <p class="block_text cool_font">Mehr Möglichkeiten: <a href="kontak">Kontakt</a></p>
+                  </div>
+
+                <div class="text_wrapper">
+                    <p class="extra_Topic_text cool_font">
+                        <a href="https://github.com/cr4yfish/">Manuels GitHub
+                            <i class="fab fa-github-square"></i>
+                        </a>
+                    </p>
+                    <p class="extra_Topic_text cool_font">
+                        <a href="https://github.com/cr4yfish/jbn-website">Quellcode der Website
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -79,7 +88,7 @@
                 <li> <i class="fab fa-discord  mouse_pointer" onclick="window.location.href='https://www.discord.gg/UVQdK45';"></i></li>
             </div>
             <div class="footer_third">
-                <p class="version_info">Version 1.0</p>
+                <p class="version_info">Version 1.1</p>
             </div>
         </div>
     </footer>
