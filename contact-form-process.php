@@ -6,8 +6,12 @@ $message = $_POST['message'];
 
 #Send email
 $headers = "From: $user_name";
-mail('cr4yfish1@gmail.com', 'message Form Submission', $message);
+$sent = mail('cr4yfish1@gmail.com', 'message Form Submission', $message);
 
-fopen("kontakt.html");
+if ($sent) {
+    header("Location: kontakt.html");
+    exit;
+}
+
 ?>
 
