@@ -1,67 +1,45 @@
 <?php
-if (isset($_POST['Email'])) {
 
+#Receive user input
+$user_name = $_POST['user_name'];
+$message = $_POST['message'];
 
-    $email_to = "cr4yfish1@gmail.com";
-    $email_subject = "JBN Website: Neue Einreichung";
+#Filter user input
+function filter_email_header($form_field) {  
+return preg_replace('/[nr|!/<>^$%*&]+/','',$form_field);
+}
 
-    function problem($error)
-    {
-        echo "Es gab Fehler mit Ihrer Einreichung. ";
-        echo "Fehler:.<br><br>";
-        echo $error . "<br><br>";
-        echo "Bitte korrigieren sie die Fehler und versuchen Sie es erneut.<br><br>";
-        die();
-    }
+$user_name  = filter_email_header($user_name);
 
-    // validation expected data exists
-    if (
-        !isset($_POST['Name']) ||
-        !isset($_POST['Message'])
-    ) {
-        problem('Es scheint fehler mit Ihreren Eingaben zu geben.');
-    }
+#Send email
+$headers = "From: $user_name";
+$sent = mail('cr4yfish1@gmail.com', 'message Form Submission', $message, $headers);
 
-    $name = $_POST['Name']; // required
-    $message = $_POST['Message']; // required
+#Thank user or notify them of a problem
+if ($sent) {
 
-    $error_message = "";
+?><html>
+<head>
+<title>Thank You</title>
+</head>
+<body>
+<h1>Thank You</h1>
+<p>Thank you for your message.</p>
+</body>
+</html>
+<?php
 
+} else {
 
-    $string_exp = "/^[A-Za-z .'-]+$/";
-
-    if (!preg_match($string_exp, $name)) {
-        $error_message .= 'Dieser Name scheint mit unserem System nicht zu funktionieren.<br>';
-    }
-
-    if (strlen($message) < 2) {
-        $error_message .= 'Ihre Nachricht konnte von unserem System nicht verarbeitet werden.<br>';
-    }
-
-    if (strlen($error_message) > 0) {
-        problem($error_message);
-    }
-
-    $email_message = "Form details below.\n\n";
-
-    function clean_string($string)
-    {
-        $bad = array("content-type", "bcc:", "to:", "cc:", "href");
-        return str_replace($bad, "", $string);
-    }
-
-    $email_message .= "Name: " . clean_string($name) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
-
-    // create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_message, $headers);
-?>
-
-    Vielen Dank für Ihre Einreichung!
-
+?><html>
+<head>
+<title>Something went wrong</title>
+</head>
+<body>
+<h1>Something went wrong</h1>
+<p>We could not send your message. Please try again.</p>
+</body>
+</html>
 <?php
 }
 ?>
