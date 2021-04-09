@@ -34,6 +34,7 @@
 .content {
     position: relative;
     top: 60vh;
+    min-height: min-content;
 }
 
 
@@ -70,7 +71,7 @@
     top: 50%;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height:40vh;
     position: absolute;
 }
 
@@ -85,7 +86,7 @@ p {
 .contact_info {
     position: relative;
     width: fit-content;
-    height: min-content;
+    height: max-content;
     margin-top: 5vh;
     left: 50%;
     transform: translateX(-50%);
@@ -112,6 +113,9 @@ p {
 .links_arrange {
     position: relative;
     float: left;
+    width: fit-content;
+    min-height: fit-content;
+    display: inline;
 }
 
 .fa-instagram-square, .fa-discord, .fa-envelope, .fa-poll {
@@ -170,7 +174,7 @@ p {
         transform: translateX(-50%);
     }
     .contact_rectangle {
-        top: 30%;
+        top: 45%;
     }
     .titelheaderContact {
         background-image: var(--darkpurple);
@@ -179,7 +183,7 @@ p {
         visibility: visible;
     }
     .content {
-        top: 35vh;
+        top: 45vh;
     }
     .qr_code {
         visibility: hidden;

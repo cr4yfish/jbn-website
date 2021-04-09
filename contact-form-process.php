@@ -2,7 +2,7 @@
 if (isset($_POST['Email'])) {
 
 
-    $email_to = "jugendinitiative.bremen@gmx.de";
+    $email_to = "cr4yfish1@gmail.com";
     $email_subject = "JBN Website: Neue Einreichung";
 
     function problem($error)
