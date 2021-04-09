@@ -1,5 +1,8 @@
 <?php
 
+ini_set('display_errors',1);  
+error_reporting(E_ALL);
+
 #Receive user input
 $user_name = $_POST['user_name'];
 $message = $_POST['message'];
