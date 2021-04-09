@@ -8,5 +8,6 @@ $message = $_POST['message'];
 $headers = "From: $user_name";
 mail('cr4yfish1@gmail.com', 'message Form Submission', $message);
 
-
+fopen("kontakt.html");
 ?>
+
