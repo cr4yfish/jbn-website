@@ -8,7 +8,9 @@ $message = $_POST['message'];
 $headers = "From: $user_name";
 $sent = mail('cr4yfish1@gmail.com', 'message Form Submission', $message);
 
-if ($sent) {
+$plswork = TRUE;
+
+if ($plswork == TRUE) {
     header("Location: kontakt.html");
     exit;
 }
