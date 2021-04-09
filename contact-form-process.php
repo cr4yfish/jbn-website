@@ -4,13 +4,6 @@
 $user_name = $_POST['user_name'];
 $message = $_POST['message'];
 
-#Filter user input
-function filter_email_header($form_field) {  
-return preg_replace('/[nr|!/<>^$%*&]+/','',$form_field);
-}
-
-$user_name  = filter_email_header($user_name);
-
 #Send email
 $headers = "From: $user_name";
 $sent = mail('cr4yfish1@gmail.com', 'message Form Submission', $message, $headers);
