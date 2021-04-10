@@ -14,7 +14,6 @@ function toggleNavBar() {
     }
 }
 
-var name;
-function pop_up_trigger(name) {
-    Window.alert("Danke für deine Mitteilung " + name);
+function pop_up_trigger() {
+    Window.alert("Danke für deine Mitteilung");
 }
