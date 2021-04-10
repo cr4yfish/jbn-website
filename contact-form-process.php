@@ -13,8 +13,8 @@ $emailed_message = "$message";
 $sent_mail = mail("cr4yfish1@gmail.com", "message Form Submission $headers", "$emailed_message");
 
 header("Location: kontakt.html");
-echo "<script src='script.js' type ='text/javascript'> pop_up_trigger(); </script>";
-
+echo '<script>pop_up_trigger();</script>';
+exit;
 
 ?>
 
