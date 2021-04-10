@@ -14,6 +14,6 @@ function toggleNavBar() {
     }
 }
 
-function pop_up_trigger(time) {
+function pop_up_trigger() {
     document.getElementById("email_confirm_popup").style.opacity = "1";
 }

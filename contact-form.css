@@ -46,7 +46,7 @@
     margin-bottom: 1rem;
 }
 
-.fcf-form-group p {
+#email_confirm_popup {
     color: var(--darkpurple);
     font-weight: 200;
     font-size: small;
