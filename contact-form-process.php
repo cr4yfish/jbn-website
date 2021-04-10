@@ -10,7 +10,7 @@ $message = $_POST['message'];
 #Send email
 $headers = "FROM_: $user_name.";
 $emailed_message = "$message";
-$sent_mail('cr4yfish1@gmail.com', 'message Form Submission $headers', $emailed_message);
+$sent_mail = mail('cr4yfish1@gmail.com', 'message Form Submission $headers', $emailed_message);
 
 if ($sent_mail) {
     echo "<script src='script.js' type ='text/javascript'> pop_up_trigger($user_name); </script>";
