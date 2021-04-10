@@ -9,7 +9,7 @@ $message = $_POST['message'];
 
 #Send email
 $headers = "From: $user_name";
-$sent = mail('cr4yfish1@gmail.com', 'message Form Submission', $message);
+mail('cr4yfish1@gmail.com', 'message Form Submission', $message);
 
 $plswork = TRUE;
 
