@@ -148,10 +148,7 @@ $message = $_POST['message'];
 #Send email
 $headers = "from: $user_name.";
 $emailed_message = "$message";
-$sent_mail = mail("cr4yfish1@gmail.com", "message Form Submission $headers", "$emailed_message");
-
-
-exit;
+mail("cr4yfish1@gmail.com", "message Form Submission $headers", "$emailed_message");
 
 ?>
 
