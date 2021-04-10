@@ -144,6 +144,10 @@ p {
     top: -1vw;
     right: -1vw;
 }
+
+
+
+
 @media screen and (min-width: 1700px) {
     .links_arrange {
         top: 3vh;
@@ -174,7 +178,7 @@ p {
         transform: translateX(-50%);
     }
     .contact_rectangle {
-        top: 45%;
+        top: 50%;
     }
     .titelheaderContact {
         background-image: var(--darkpurple);
@@ -183,7 +187,7 @@ p {
         visibility: visible;
     }
     .content {
-        top: 45vh;
+        top: 50vh;
     }
     .qr_code {
         visibility: hidden;

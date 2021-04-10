@@ -13,14 +13,7 @@ function toggleNavBar() {
         isShown = false;
     }
 }
-const sleep = (seconds) => {
-    return new Promise(resolve => setTimeout(resolve, seconds))
-}
-
 
 function pop_up_trigger(time) {
-    sleep(time).then(
-        alert("Danke für deine Mitteilung")
-        );
-    
+    document.getElementById("email_confirm_popup").style.opacity = "1";
 }
