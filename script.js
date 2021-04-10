@@ -17,8 +17,9 @@ const sleep = (seconds) => {
     return new Promise(resolve => setTimeout(resolve, seconds))
 }
 
-function pop_up_trigger() {
-    sleep(4).then(
+
+function pop_up_trigger(time) {
+    sleep(time).then(
         alert("Danke für deine Mitteilung")
         );
     
