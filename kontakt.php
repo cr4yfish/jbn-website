@@ -21,13 +21,13 @@
         <link href="contact-form.css" rel="stylesheet">
         <meta name="Kontakt" content="">
         <title>Kontakt | JBN</title>
-        <link rel="canonical" href="https://jugendbeiratneustadt.de/kontakt.html"/>
+        <link rel="canonical" href="https://jugendbeiratneustadt.de/kontakt.php"/>
     </head>
 
 <header>
         <div id="navbar" class="navbar">
             <span class="mouse_pointer" onclick="window.location.href='index.html'">Home</span>
-            <span class="active mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
+            <span class="active mouse_pointer" onclick="window.location.href='kontakt.php'">Kontakt</span>
         </div>
 
     <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
@@ -57,7 +57,7 @@
                 <div id="contact-form-main">
                     <label class="Form-title font_rockwell_nova">Deine Idee einreichen</label>
 
-                    <form id="fcf-form-id"  method="post" action="contact-form-process.php">
+                    <form id="fcf-form-id"  method="post" action="">
     
                         <div class="fcf-form-group">
                             <div class="fcf-input-group">
@@ -138,5 +138,24 @@
 
     </body>
 
+<?php
+
+ini_set('display_errors',1);  
+error_reporting(E_ALL);
+
+#Receive user input
+$user_name = $_POST['user_name'];
+$message = $_POST['message'];
+
+#Send email
+$headers = "from: $user_name.";
+$emailed_message = "$message";
+$sent_mail = mail("cr4yfish1@gmail.com", "message Form Submission $headers", "$emailed_message");
+
+
+exit;
+
+?>
 
 </html>
+
