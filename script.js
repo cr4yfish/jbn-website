@@ -13,7 +13,13 @@ function toggleNavBar() {
         isShown = false;
     }
 }
+const sleep = (seconds) => {
+    return new Promise(resolve => setTimeout(resolve, seconds))
+}
 
 function pop_up_trigger() {
-    alert("Danke für deine Mitteilung");
+    sleep(4).then(
+        alert("Danke für deine Mitteilung")
+        );
+    
 }

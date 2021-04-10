@@ -13,9 +13,6 @@ $emailed_message = "$message";
 $sent_mail = mail("cr4yfish1@gmail.com", "message Form Submission $headers", "$emailed_message");
 
 header("Location: kontakt.html");
-sleep(3);
-echo '<script>pop_up_trigger();</script>';
 exit;
 
 ?>
-
