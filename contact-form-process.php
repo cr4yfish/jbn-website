@@ -8,13 +8,13 @@ $user_name = $_POST['user_name'];
 $message = $_POST['message'];
 
 #Send email
-$headers = "FROM_: $user_name.";
+$headers = "from: $user_name.";
 $emailed_message = "$message";
 $sent_mail = mail("cr4yfish1@gmail.com", "message Form Submission $headers", "$emailed_message");
 
 if ($sent_mail) {
-    header("Location: kontakt.html");
     echo "<script src='script.js' type ='text/javascript'> pop_up_trigger($user_name); </script>";
+    header("Location: kontakt.html");
     exit;
 } else {
     header("Location: error.html");
