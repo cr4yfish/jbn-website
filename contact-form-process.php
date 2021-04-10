@@ -9,8 +9,8 @@ $message = $_POST['message'];
 
 #Send email
 $headers = "FROM_: $user_name.";
-$emailed_message = "$headers NACHRICHT_: $message";
-mail('cr4yfish1@gmail.com', 'message Form Submission', $emailed_message);
+$emailed_message = "$message";
+mail('cr4yfish1@gmail.com', 'message Form Submission $headers', $emailed_message);
 
 $plswork = TRUE;
 
