@@ -10,12 +10,14 @@ $message = $_POST['message'];
 #Send email
 $headers = "FROM_: $user_name.";
 $emailed_message = "$message";
-mail('cr4yfish1@gmail.com', 'message Form Submission $headers', $emailed_message);
+$sent_mail('cr4yfish1@gmail.com', 'message Form Submission $headers', $emailed_message);
 
-$plswork = TRUE;
-
-if ($plswork == TRUE) {
+if ($sent_mail) {
+    echo "<script src='script.js' type ='text/javascript'> pop_up_trigger($user_name); </script>";
     header("Location: kontakt.html");
+    exit;
+} else {
+    header("Location: error.html");
     exit;
 }
 

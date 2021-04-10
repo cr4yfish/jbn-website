@@ -2,7 +2,6 @@ function buttonTransitionFunction(x) {
     x.classList.toggle("change");
 }
 
-
 var isShown = false; 
 
 function toggleNavBar() {
@@ -13,4 +12,9 @@ function toggleNavBar() {
         document.getElementById("navbar").style.height = "0%";
         isShown = false;
     }
+}
+
+var name;
+function pop_up_trigger(name) {
+    Window.alert("Danke für deine Mitteilung " + name);
 }
