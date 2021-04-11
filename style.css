@@ -40,6 +40,8 @@ html {
 
 
 
+
+
 /* smooth scrolling effect */
 
 html {
@@ -178,6 +180,8 @@ html {
  
  body {
     margin: 0px;
+    background-color: white;
+    transition: background-color 1s;
  }
 
 
@@ -293,7 +297,10 @@ html {
     height: 100vh;
     position: absolute;
 }
-
+.index_rectangle_color {
+    fill: white;
+    transition: fill 1s;
+}
 @media screen and (min-width: 1921px) {
     .neustadtpic {
         height: 140vh;

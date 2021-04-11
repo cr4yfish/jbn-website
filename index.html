@@ -1,5 +1,5 @@
 <!DOCTYPE html >
-<html lang="de">
+<html lang="de" >
     <head>
 
         <!-- Allgemein -->
@@ -13,6 +13,7 @@
         <meta name="theme-color" content="#6C63FF"/>
         <link rel="stylesheet" href="https://use.typekit.net/ofj3rzd.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="dark_theme.css">
         <link rel="stylesheet" href="footer_style.css">
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/d4164139c2.js" crossorigin="anonymous"></script>
@@ -23,7 +24,7 @@
     </head>
     
     <header>
-            <div id="navbar" class="navbar">
+            <div id="navbar" class="navbar dark_comp">
                 <span class="active mouse_pointer" href="#home">Home</span>
                 <span class="mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
             </div>
@@ -35,7 +36,7 @@
         </div>
     </header>
 
-    <body>
+    <body onload="checkTheme();" class="dark_comp">
 
 <!--- Page 1 -->
         <div class="picture">
@@ -60,7 +61,7 @@
 <!--------------------------->
 
 <!-- Weiße Fläche -->
-        <div id="index_rectangle" class="index_rectangle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 3392.787"><path id="white" d="M5900,1179.24s-680.326,21.791-948.911,39.528S3980,1275.932,3980,1275.932v3296.1H5900Z" transform="translate(-3980 -1179.24)" fill="#fff"/></svg></div>
+        <div id="index_rectangle" class="index_rectangle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 3392.787"><path class="index_rectangle_color dark_comp" d="M5900,1179.24s-680.326,21.791-948.911,39.528S3980,1275.932,3980,1275.932v3296.1H5900Z" transform="translate(-3980 -1179.24)"/></svg></div>
 
 
 <!--- Pages section -->
@@ -135,6 +136,7 @@
             </div>
             <div class="footer_third">
                 <p class="version_info">Version 1.0</p>
+                <a class="version_info mouse_pointer" onclick="toggleTheme();">Thema wechseln</a>
             </div>
         </div>
     </footer>
