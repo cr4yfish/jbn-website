@@ -30,6 +30,7 @@
     display: block;
     box-sizing: border-box;
     background-color: var(--darkpurple);
+    transition: background-color 1s;
     overflow: hidden;
 }
 
@@ -82,20 +83,20 @@ a {
 }
 a:hover, .footer_third .fab:hover {
     color: var(--maybepink);
-    transition: color 1500ms ease, text-shadow 1500ms ease;
+    transition: color 350ms ease, text-shadow 1500ms ease;
     text-shadow: 0 0 5px var(--nicePink);
 }
+
 .inner_footer .footer_third li {
     display: inline block;
     padding: 0 5px;
     font-size: 1.5vw;
 }
 
-.footer_third .fab {
+.fab {
     color: var(--kindofred);
-    transition: 250ms ease all;
+    transition: color 1s;
 }
-
 
 .version_info {
     color: #ffffff5e !important;

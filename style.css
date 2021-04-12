@@ -196,7 +196,7 @@ html {
     top: 0;
 }
 .neustadtpic {
-    background-image: url("images/Bremen\ pic.webp");
+    background-image: url("images/BremenPicDark.webp");
     background-repeat: no-repeat;
     background-size: cover;
     height: 110vh;
@@ -329,7 +329,7 @@ html {
 
 .page {
     overflow: visible;
-    width: min-content;
+    width: 100%;
     position: relative;
     padding-left: 5vw;
     padding-right: 5vw;
@@ -337,7 +337,17 @@ html {
     padding-bottom: 5vw;
 }
 
+#page2 {
+    top: 10vh;
+    height: 40vh;
+}
+
+#page3 {
+    height: 50vh;
+}
+
 #page4 {
+    top: -15vh;
     margin-bottom: 10vw;
 }
 @media screen and (max-width: 1200px) {
@@ -372,16 +382,20 @@ html {
         padding: 3vw 6vw;
     }
     .index_rectangle {
-        top: 50%;
+        top: 80%;
     }
     #page2 {
         top: 0vh;
+        height: 60vh;
+    }
+    #page3 {
+        height: 75vh ;
     }
     #pages_section {
-        top: 65%;
+        top: 85%;
     }
     .neustadtpic {
-        height: 65vh;
+        height: 90vh;
     }
     .page {
         padding-left: 5vw;
@@ -416,6 +430,7 @@ html {
     background-color: var(--notwhite);
     padding: 2vw;
     border-radius: 1.5vw;
+    margin: 0 !important;
 }
 
 @media screen and (max-width: 1200px) {
@@ -424,6 +439,8 @@ html {
         text-align: center;
         align-content: center;
         align-self: center;
+        left: 50%;
+        transform: translateX(-50%);
     }
     .Topic_text {
         font-size: 4vw;
@@ -453,6 +470,15 @@ html {
 }
 
 @media screen and (max-width: 1000px) {
+    .neustadtpic {
+        height: 65vh;
+    }
+    .index_rectangle {
+        top: 59%;
+    }
+    #pages_section {
+        top: 70%;
+    }
     .scroll_arrow_home_1 {
         visibility: visible;
         top: 85vh;
@@ -465,30 +491,47 @@ html {
         display: none;
     }
 }
-@media screen and (max-height: 850px) {
+
+@media screen and (max-width: 850px) {
+    #page2 {
+        height: 30vh;
+    }
+    #page3 {
+        height: 40vh;
+    }
+    #page4 {
+        top: -5vh;
+    }
+}
+
+@media screen and (min-height: 850px) {
     .scroll_arrow_home_1 {
         visibility: hidden;
     }
+
 }
 @media screen and (min-width: 400px) {
     .scroll_arrow_home_1 {
         visibility: hidden;
     }
+    #page2 {
+        height: 2vh;
+    }
 }
+
 /* icon */
 
 .icon {
-    position: absolute;
-    left: 100%;
+    position: relative;
     float: right;
+    top: 0;
+    right: 10%;
+    transform: translateY(-15%);
 }
 
-.page2_icon {
-    width: auto;
-    height: auto;
-}
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1200px) {
     .icon, .page2_icon, .scroll_arrow_home_2, .scroll_arrow_home_3 {
         display: none;
     }
