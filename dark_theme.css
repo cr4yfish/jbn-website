@@ -103,6 +103,13 @@ html .dark_toggle:nth-child(2) {
   
 }
 
+
+#pages_section .dark_comp .wave_controller {
+  visibility: hidden;
+}
+#pages_section .dark_toggle .wave_controller {
+  visibility: visible !important;
+}
 #wave_controller {
   top: 1vh !important;
 }
@@ -138,7 +145,7 @@ html .dark_toggle:nth-child(2) {
 
 /* pages */
 
-#pages_section .dark_toggle:nth-child(4) {
+#pages_section .dark_toggle #page3 {
   background-color: var(--dark_theme_layered_purple);
 }
 
