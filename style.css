@@ -12,6 +12,11 @@
     --kindofred: #CC818C;
     --darkerred: #A0616A; 
     --nicePink: #FDC2CC;
+
+    --dark_theme_darkpurple: #293241;
+    --dark_theme_layered_purple: #303A4B;
+    --dark-theme-fish-blue: #DFFBFC;
+
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
@@ -180,8 +185,6 @@ html {
  
  body {
     margin: 0px;
-    background-color: white;
-    transition: background-color 1s;
  }
 
 
@@ -299,7 +302,6 @@ html {
 }
 .index_rectangle_color {
     fill: white;
-    transition: fill 1s;
 }
 @media screen and (min-width: 1921px) {
     .neustadtpic {

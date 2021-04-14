@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://use.typekit.net/ofj3rzd.css">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="footer_style.css">
+        <link rel="stylesheet" href="dark_theme.css">
         <script src="script.js"></script>
         <script src="https://kit.fontawesome.com/d4164139c2.js" crossorigin="anonymous"></script>
 
@@ -24,28 +25,28 @@
         <link rel="canonical" href="https://jugendbeiratneustadt.de/kontakt.html"/>
     </head>
 
-<header>
-        <div id="navbar" class="navbar">
-            <span class="mouse_pointer" onclick="window.location.href='index.html'">Home</span>
-            <span class="active mouse_pointer" onclick="window.location.href='kontakt.html'">Kontakt</span>
+    <header>
+            <div id="navbar" class="navbar dark_comp">
+                <span class="mouse_pointer" onclick="window.location.href='index.html'">Home</span>
+                <span class="active mouse_pointer">Kontakt</span>
+            </div>
+
+        <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-
-    <div class="menu_icon" onclick="buttonTransitionFunction(this);toggleNavBar();" >
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-    </div>
-</header>
+    </header>
 
 
-    <body>
+    <body class="dark_comp" onload="checkTheme()" >
 
 
         <div id="titelheaderContact" class="titelheaderContact"></div>
         <span class="mobile_header font_rockwell_nova">Kontakt</span>
 
         <!-- Weiße Fläche -->
-        <div id="index_rectangle" class="contact_rectangle"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 3392.787"><path id="white" d="M5900,1179.24s-680.326,21.791-948.911,39.528S3980,1275.932,3980,1275.932v3296.1H5900Z" transform="translate(-3980 -1179.24)" fill="#fff"/></svg></div>
+        <div id="index_rectangle" class="contact_rectangle dark_comp"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1920 3392.787"><path id="white" class="contact_rectangle_svg dark_comp" d="M5900,1179.24s-680.326,21.791-948.911,39.528S3980,1275.932,3980,1275.932v3296.1H5900Z" transform="translate(-3980 -1179.24)" /></svg></div>
 
         <section id="content" class="content">
 
@@ -54,25 +55,25 @@
             <div class="contact-form-body">
 
 
-                <div id="contact-form-main">
+                <div id="contact-form-main" class="dark_comp">
                     <label class="Form-title font_rockwell_nova">Deine Idee einreichen</label>
 
                     <form id="fcf-form-id"  method="post" action="">
     
                         <div class="fcf-form-group">
-                            <div class="fcf-input-group">
+                            <div class="fcf-input-group dark_comp">
                                 <input type="text" placeholder="Name" id="Name" name="user_name"  class="fcf-form-control font_rockwell_nova" required>
                             </div>
                         </div>
                 
                         <div class="fcf-form-group ">
-                            <div class="fcf-input-group">
+                            <div class="fcf-input-group dark_comp">
                                 <textarea id="Message" placeholder="Nachricht" name="message" class="fcf-form-control font_rockwell_nova" rows="6" maxlength="1000" required></textarea>
                             </div>
                         </div>
                 
-                        <div class="fcf-form-group">
-                            <button type="submit" name="send" value="Submit" onclick="pop_up_trigger()" id="fcf-button" class="fcf-btn-align fcf-btn fcf-btn-primary  font_rockwell_nova">Abschicken</button>
+                        <div class="fcf-form-group dark_comp">
+                            <button type="submit" name="send" value="Submit" onclick="pop_up_trigger()" id="fcf-button" class="dark_comp fcf-btn-align fcf-btn fcf-btn-primary  font_rockwell_nova">Abschicken</button>
                             <br>
                             <p id="email_confirm_popup" class="fcf-btn-align font_rockwell_nova">Danke!</p>
                         </div>
@@ -82,22 +83,22 @@
 
                 <div class="contact_info">
                     <div class="links_arrange">
-                        <span class="mouse_pointer" onclick="window.location.href='https://www.discord.gg/UVQdK45';">
+                        <span class="mouse_pointer dark_comp" onclick="window.location.href='https://www.discord.gg/UVQdK45';">
                             <p class="fab fa-discord kontakt_icon"></p>
                             <p class="contactlinks font_rockwell_nova">discord.gg/UVQdK45</p>
                         </span>
                         <br><br><br>
-                        <span class="mouse_pointer" onclick="window.location.href='https://www.instagram.com/jugendbeirat_neustadt/';">
+                        <span class="mouse_pointer dark_comp" onclick="window.location.href='https://www.instagram.com/jugendbeirat_neustadt/';">
                             <p class="fab fa-instagram-square kontakt_icon"></p>
                             <p class="contactlinks font_rockwell_nova">Jugendbeirat_Neustadt</p>
                         </span>
                         <br><br><br>
-                        <span class="mouse_pointer" onclick="window.location.href='mailto:jugendinitiative.bremen@gmx.de';">
+                        <span class="mouse_pointer dark_comp" onclick="window.location.href='mailto:jugendinitiative.bremen@gmx.de';">
                             <p class="fas fa-envelope kontakt_icon"></p>
                             <p class="contactlinks font_rockwell_nova">jugendinitiative.bremen@gmx.de</p>
                         </span>
                         <br><br><br>
-                        <span class="mouse_pointer" onclick="window.location.href='https://www.survio.com/survey/d/U6C6Q5S5O4B4Q7R0S';">
+                        <span class="mouse_pointer dark_comp" onclick="window.location.href='https://www.survio.com/survey/d/U6C6Q5S5O4B4Q7R0S';">
                             <p class="fas fa-poll kontakt_icon"></p>
                             <p class="contactlinks font_rockwell_nova">Aktuelle Umfrage</p>
                             </span>
@@ -108,28 +109,29 @@
                     </span>
                 </div>
                 </div>
-                <footer class="footer">
-                    <div class="inner_footer">
+                <footer class="footer dark_comp">
+                    <div class="inner_footer ">
                         <div class="logo_container">
-                            <img src="images/logo.webp" class="logo_footer" alt="Logo" style="width:100px;height:auto;">
+                            <img src="images/logoNew.webp" class="logo_footer" alt="Logo" style="width:100px;height:auto;">
                         </div>
-                        <div class="footer_third">
+                        <div class="footer_third dark_comp">
                             <h1>Rechtliches</h1>
                             <a href="impressum.html">Impressum</a>
                             <a href="datenschutz.html">Datenschutz</a>
                         </div>
-                        <div class="footer_third">
+                        <div class="footer_third dark_comp">
                             <h1>Sitemap</h1>
                             <a href="index.html">Home</a>
                             <a href="kontakt.html">Kontakt</a>
                         </div>
-                        <div class="footer_third">
+                        <div class="footer_third dark_comp">
                             <h1>Social Media</h1>
                             <li > <i class="fab fa-instagram-square mouse_pointer" onclick="window.location.href='https://www.instagram.com/jugendbeirat_neustadt/';"></i></li>
                             <li> <i class="fab fa-discord  mouse_pointer" onclick="window.location.href='https://www.discord.gg/UVQdK45';"></i></li>
                         </div>
-                        <div class="footer_third">
-                            <p class="version_info">Version 1.1</p>
+                        <div class="footer_third dark_comp">
+                            <p class="version_info">Version 2.0</p>
+                            <a class="version_info mouse_pointer" onclick="toggleTheme();">Thema wechseln</a>
                         </div>
                     </div>
                 </footer>

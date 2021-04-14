@@ -1,10 +1,18 @@
 function checkTheme() {
     // find out if darkTheme has already been initialized.
-    if ( localStorage.getItem("darkTheme") == "true" ) {
+    if (localStorage.getItem("darkTheme") == "true" ) {
         // darkTheme is in storage and set true, which means dark theme should be enabled.
         console.log( "darkTheme has been set as true");
-        enableTheme(true);
-    } else {
+        enableTheme();
+    } 
+
+    else if (localStorage.getItem("darkTheme") == "false") {
+        // Website holds storage that means User has enabled light theme before.
+        console.log("User wants light mode, ew.")
+        disableTheme();
+    }
+
+    else if (localStorage.getItem("darkTheme") == null ){
         // darkTheme is either false or has not changed yet, which means 
         // the website should default to darkTheme = true.
         
@@ -12,19 +20,26 @@ function checkTheme() {
         // If it has, darkTheme will overwrite darkTheme == false, with darkTheme = false, which
         // doesnt change anything.
         localStorage.setItem("darkTheme", "true");
-        console.log("dark theme has not been set yet or is false. Has been set to true.");
+        console.log("dark theme has not been set yet. Default set to dark mode");
     }
 }
 
-function enableTheme(x) {
-    if (x == true) {
+function enableTheme() {
         var divs = document.querySelectorAll('.dark_comp');
         for (var i = 0; i < divs.length; i++) {
             // add dark_toggle to enable dark Theme.
             divs[i].classList.add('dark_toggle');
         }
         // store darkTheme = true value, since darkTheme is now enabled
-    }
+}
+
+function disableTheme() {
+        var divs = document.querySelectorAll('.dark_comp');
+        for (var i = 0; i < divs.length; i++) {
+            // remove dark_toggle (if present) to disable dark Theme.
+            divs[i].classList.remove('dark_toggle');
+        }
+        // store darkTheme = false value, since darkTheme is now enabled
 }
 
 // switch is clicked:
@@ -54,7 +69,6 @@ function toggleTheme(x) {
 
 }
 
-
 function buttonTransitionFunction(x) {
     x.classList.toggle("change");
 }
@@ -71,14 +85,6 @@ function toggleNavBar() {
     }
 }
 
-
 function pop_up_trigger() {
     document.getElementById("email_confirm_popup").style.opacity = "1";
 }
-
-
-// Ways to implement a dark mode switch
-// 1. Add a dark_toggle class to all elements
-// 2. add a dark_comp class to elements that can switch to dark mode, 
-// then get those elements and toggle dark-toggle on them
-// 3. Google a more sensible solution

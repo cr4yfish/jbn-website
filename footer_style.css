@@ -30,7 +30,6 @@
     display: block;
     box-sizing: border-box;
     background-color: var(--darkpurple);
-    transition: background-color 1s;
     overflow: hidden;
 }
 

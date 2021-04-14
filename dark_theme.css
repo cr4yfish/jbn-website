@@ -68,7 +68,6 @@ html {
   header .dark_toggle span.active {
     color: var(--niceblue);
     text-shadow: 0 0 20px var(--dark_theme_layered_purple);
-    transition: all 1s;
 }
 
 
@@ -77,13 +76,11 @@ html {
 
 .index_rectangle .dark_toggle {
     fill: var(--dark_theme_darkpurple);
-    transition: fill 1s;
 }
 
 
 html .dark_toggle:nth-child(2) {
     background-color: var(--dark_theme_darkpurple);
-    transition: background-color 1s;
 }
 
 
@@ -151,7 +148,6 @@ html .dark_toggle:nth-child(2) {
 
 .pages_content  .dark_toggle h2 {
   color: var(--dark-theme-fish-blue);
-  transition: all 1s;
 
 }
 
@@ -159,7 +155,6 @@ html .dark_toggle:nth-child(2) {
   background: none;
   color: var(--lightblue);
   padding-left: 0;
-  transition: all 1s;
   
 }
 
@@ -179,7 +174,6 @@ html .dark_toggle:nth-child(2) {
 
 #pages_section .dark_toggle .arrow {
   visibility: hidden;
-  transition: all 1s;
 }
 
 
@@ -187,7 +181,6 @@ html .dark_toggle:nth-child(2) {
 
 #pages_section .dark_toggle:only-child {
   background-color: var(--whitestwhite);
-  transition: all 1s;
 }
 
 .inner_footer .dark_toggle a {
@@ -204,4 +197,63 @@ html .dark_toggle:nth-child(2) {
 .inner_footer .dark_toggle li .fab {
     color: var(--dark-theme-fish-blue);
     transition: color 1s, text-shadow 0.5s;
+}
+
+
+/*----------                   ----------- */
+
+
+
+/*---------- Kontakt exklusive ----------- */
+
+
+
+/*----------                   ----------- */
+
+
+
+html .dark_toggle .contact_rectangle_svg {
+  fill: var(--dark_theme_darkpurple);
+}
+
+/* header */
+
+.contact-form-body .dark_toggle .Form-title {
+  color: var(--lightblue);
+}
+
+/* textbox */
+
+.fcf-form-group .dark_toggle .fcf-form-control {
+  background-color: var(--dark-theme-fish-blue);
+}
+
+.fcf-form-group .dark_toggle .fcf-form-control {
+  background-color: var(--dark-theme-fish-blue);
+}
+
+
+.fcf-form-group .dark_toggle .fcf-form-control:focus {
+  border-color: var(--kindofred);
+  box-shadow: 0 0 20px var(--darkpurpletrans);
+}
+
+#fcf-form-id .dark_toggle .fcf-btn-primary {
+  background-color: var(--lighterpurple);
+  box-shadow: 0 0 20px var(--darkpurpletrans);
+}
+#fcf-form-id .dark_toggle .fcf-btn-primary:hover {
+  background-color: var(--kindofred);
+  box-shadow: 0 0 20px var(--darkerred);
+}
+
+/* contact links */
+
+.links_arrange .dark_toggle .contactlinks {
+  color: var(--maybepink);
+}
+
+
+.links_arrange .dark_toggle .kontakt_icon {
+  color: var(--kindofred);
 }
