@@ -20,6 +20,13 @@
     scrollbar-color: rgb(0, 0, 0) rgb(0, 0, 0)  !important;
 }
 
+
+/* Selection color  */
+::selection {
+    color: var(--nicePink);
+    background: var(--colorfulgray);
+  } 
+
 /* scrollbar */
 
 html {

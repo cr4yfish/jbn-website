@@ -74,15 +74,50 @@ function buttonTransitionFunction(x) {
     x.classList.toggle("change");
 }
 
+
+
+function checkNav() {
+    if (localStorage.getItem("isShown") == "true") {
+        // Navbar is extended
+        localStorage.setItem("isShown", "true");
+        extendNav();
+        console.log("Navbar wants to be extended ;)")
+    }
+    else {
+        localStorage.setItem("isShown", "false");
+        rectractNav();
+        console.log("Navbar cookie has not been set yet, so retracted it is.")
+    }
+}
+
+function extendNav() {
+    document.getElementById("navbar").style.height = "10vh";
+    isShown = true;
+    console.log("Extended!");
+    localStorage.setItem("isShown", "true");
+}
+
+function rectractNav() {
+    document.getElementById("navbar").style.height = "0%";
+        isShown = false;
+        console.log("Retracted!");
+        localStorage.setItem("isShown", "false");
+}
+
+
 var isShown = false; 
 
 function toggleNavBar() {
     if (isShown == false) {
         document.getElementById("navbar").style.height = "10vh";
         isShown = true;
+        console.log("Extended!");
+        localStorage.setItem("isShown", "true");
     } else if (isShown == true) {
         document.getElementById("navbar").style.height = "0%";
         isShown = false;
+        console.log("Retracted!");
+        localStorage.setItem("isShown", "false");
     }
 }
 
