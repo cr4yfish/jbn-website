@@ -6,13 +6,13 @@ function checkTheme() {
         enableTheme(true);
     } else {
         // darkTheme is either false or has not changed yet, which means 
-        // the website should default to darkTheme = false.
+        // the website should default to darkTheme = true.
         
         // store darkTheme = false in case it has not been stored yet.
         // If it has, darkTheme will overwrite darkTheme == false, with darkTheme = false, which
         // doesnt change anything.
-        localStorage.setItem("darkTheme", "false");
-        console.log("dark theme has not been set yet or is false");
+        localStorage.setItem("darkTheme", "true");
+        console.log("dark theme has not been set yet or is false. Has been set to true.");
     }
 }
 
