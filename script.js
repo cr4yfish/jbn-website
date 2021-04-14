@@ -20,6 +20,7 @@ function checkTheme() {
         // If it has, darkTheme will overwrite darkTheme == false, with darkTheme = false, which
         // doesnt change anything.
         localStorage.setItem("darkTheme", "true");
+        enableTheme();
         console.log("dark theme has not been set yet. Default set to dark mode");
     }
 }
