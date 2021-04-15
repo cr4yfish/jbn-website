@@ -215,12 +215,31 @@ html .dark_toggle:nth-child(2) {
 html .dark_toggle .contact_rectangle_svg {
   fill: var(--dark_theme_darkpurple);
 }
+.contact_rectangle_svg {
+  fill: white;
+}
+
 
 /* header */
 
 .contact-form-body .dark_toggle .Form-title {
   color: var(--lightblue);
 }
+
+
+/* -- titleheaderContact -- */
+
+
+@media screen and (max-width: 1000px) {
+  .dark_toggle .titelheaderContact {
+    background-color: var(--dark_theme_darkpurple) !important;
+  }
+}
+
+
+
+
+
 
 /* textbox */
 

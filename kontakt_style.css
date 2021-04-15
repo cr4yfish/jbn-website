@@ -218,3 +218,19 @@ p {
         font-size: 14.4vw !important;
     }
 }
+
+
+
+
+
+@media screen and (max-height: 1000px) {
+    .titelheaderContact {
+        height: 50vh;
+    }
+    .contact_rectangle {
+        top: 40%;
+    }
+    .mobile_header {
+        top: 20vh;
+    }
+}
