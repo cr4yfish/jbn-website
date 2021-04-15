@@ -91,6 +91,11 @@ function checkNav() {
 }
 
 function extendNav() {
+    var divs = document.querySelectorAll(".menu_icon");
+    for (var i = 0; i < divs.length; i++) {
+        // add change to change the hamburger to a cross.
+        divs[i].classList.add('change');
+    }
     document.getElementById("navbar").style.height = "10vh";
     isShown = true;
     console.log("Extended!");
@@ -98,10 +103,15 @@ function extendNav() {
 }
 
 function rectractNav() {
+    var divs = document.querySelectorAll(".menu_icon");
+    for (var i = 0; i < divs.length; i++) {
+        // remove change to change the cross to a hamburger.
+        divs[i].classList.remove('change');
+    }
     document.getElementById("navbar").style.height = "0%";
-        isShown = false;
-        console.log("Retracted!");
-        localStorage.setItem("isShown", "false");
+    isShown = false;
+    console.log("Retracted!");
+    localStorage.setItem("isShown", "false");
 }
 
 
